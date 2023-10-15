@@ -1,0 +1,1058 @@
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         TEAMD_HALFADDER.lvs.report
+LAYOUT NAME:              /home/jw26u22/d2/LVS/TEAMD_HALFADDER.sp ('TEAMD_HALFADDER')
+SOURCE NAME:              /home/jw26u22/d2/LVS/TEAMD_HALFADDER.src.net ('TEAMD_HALFADDER')
+RULE FILE:                /home/jw26u22/d2/LVS/_calibre.lvs_
+CREATION TIME:            Mon Oct  9 12:17:22 2023
+CURRENT DIRECTORY:        /home/jw26u22/d2/LVS
+USER NAME:                jw26u22
+CALIBRE VERSION:          v2021.3_35.19    Wed Sep 1 15:25:28 PDT 2021
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  CORRECT        TEAMD_HALFADDER               TEAMD_HALFADDER
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   // LVS COMPONENT TYPE PROPERTY
+   // LVS COMPONENT SUBTYPE PROPERTY
+   // LVS PIN NAME PROPERTY
+   LVS POWER NAME                         "VDD"
+   LVS GROUND NAME                        "GND"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    ALL
+   // LVS HCELL REPORT
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   YES
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            YES
+   LVS ALL CAPACITOR PINS SWAPPABLE       YES
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                NO
+   LVS INJECT LOGIC                       YES
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS REVERSE WL                         NO
+   // LVS NETLIST FILTER DEVICES          NO
+   // LVS PRESERVE BOX PORTS              NO
+   LVS SPICE PREFER PINS                  YES
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   // LVS SPICE EXCLUDE CELL SOURCE
+   // LVS SPICE EXCLUDE CELL LAYOUT
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            NO
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    NO
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            NO
+   SOURCE CASE                            NO
+   LVS COMPARE CASE                       NO
+   LVS COMPARE CASE STRICT                NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     50
+   LVS PROPERTY RESOLUTION MAXIMUM        65536
+   // LVS SIGNATURE MAXIMUM
+   // LVS FILTER UNUSED OPTION
+   // LVS REPORT OPTION
+   LVS REPORT UNITS                       YES
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+   // LVS IGNORE DEVICE PIN
+   // LVS PREFER NETS FILTER SOURCE
+   // LVS PREFER NETS FILTER LAYOUT
+   LVS PREFER PORT NETS                   NO
+   LVS EXPAND ON ERROR                    NO
+
+   // Device Type Map
+
+   LVS DEVICE TYPE                        RESISTOR "rm1" "rm10" "rm2" "rm3" "rm4" "rm5" "rm6" "rm7" "rm8" "rm9" "rnodl" "rnodl_m"
+                                                   "rnods" "rnods_m" "rnodwo" "rnodwo_m" "rnpolyl" "rnpolyl_m" "rnpolys"
+                                                   "rnpolys_m" "rnpolywo" "rnpolywo_m" "rnwod" "rnwod_m" "rnwsti" "rnwsti_m"
+                                                   "rpodl" "rpodl_m" "rpods" "rpods_m" "rpodwo" "rpodwo_m" "rppolyl" "rppolyl_m"
+                                                   "rppolyl_rf" "rppolyl_rf_rdk" "rppolys" "rppolys_m" "rppolys_rf"
+                                                   "rppolys_rf_rdk" "rppolywo" "rppolywo_m" "rppolywo_rf" "rppolywo_rf_rdk"
+                                                   [ POS=PLUS NEG=MINUS ]  SOURCE LAYOUT
+
+   // Map Device
+
+   LVS MAP DEVICE                      MN(N) MN(NCH) LAYOUT
+   LVS MAP DEVICE                      MP(P) MP(PCH) LAYOUT
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  NO
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             NO
+   LVS REDUCE SPLIT GATES                 NO
+   LVS REDUCE PARALLEL BIPOLAR            YES
+   LVS REDUCE SERIES CAPACITORS           YES
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+
+   LVS REDUCE  rnwsti_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rnwsti_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rnwod_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rnwod_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rpodwo_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rpodwo_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rnodwo_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rnodwo_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rpodl_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rpodl_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rnodl_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rnodl_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rpods_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rpods_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rnods_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rnods_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rppolys_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rppolys_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rnpolys_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rnpolys_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rppolyl_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rppolyl_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rnpolyl_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rnpolyl_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rppolywo_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rppolywo_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rnpolywo_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rnpolywo_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rppolyl_rf  PARALLEL NO
+   LVS REDUCE  rppolyl_rf  SERIES PLUS MINUS NO
+   LVS REDUCE  rppolyl_rf_rdk  PARALLEL NO
+   LVS REDUCE  rppolyl_rf_rdk  SERIES PLUS MINUS NO
+   LVS REDUCE  rppolys_rf  PARALLEL NO
+   LVS REDUCE  rppolys_rf  SERIES PLUS MINUS NO
+   LVS REDUCE  rppolys_rf_rdk  PARALLEL NO
+   LVS REDUCE  rppolys_rf_rdk  SERIES PLUS MINUS NO
+   LVS REDUCE  rppolywo_rf  PARALLEL NO
+   LVS REDUCE  rppolywo_rf  SERIES PLUS MINUS NO
+   LVS REDUCE  rppolywo_rf_rdk  PARALLEL NO
+   LVS REDUCE  rppolywo_rf_rdk  SERIES PLUS MINUS NO
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Filter
+
+   LVS FILTER  D(pnwdio)  OPEN LAYOUT
+
+   // Trace Property
+
+   TRACE PROPERTY  lddp(pch_hv25_spw)  l l 0
+   TRACE PROPERTY  lddp(pch_hv25_spw)  w w 0
+   TRACE PROPERTY  lddn(nch_hv25_snw)  l l 0
+   TRACE PROPERTY  lddn(nch_hv25_snw)  w w 0
+   TRACE PROPERTY  mn(nch)  l l 0
+   TRACE PROPERTY  mn(nch)  w w 0
+   TRACE PROPERTY  mn(nch_18)  l l 0
+   TRACE PROPERTY  mn(nch_18)  w w 0
+   TRACE PROPERTY  mn(nch_18_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_18_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_25)  l l 0
+   TRACE PROPERTY  mn(nch_25)  w w 0
+   TRACE PROPERTY  mn(nch_25_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_25_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_25_dnwod)  l l 0
+   TRACE PROPERTY  mn(nch_25_dnwod)  w w 0
+   TRACE PROPERTY  mn(nch_25_dnwud)  l l 0
+   TRACE PROPERTY  mn(nch_25_dnwud)  w w 0
+   TRACE PROPERTY  mn(nch_25od)  l l 0
+   TRACE PROPERTY  mn(nch_25od)  w w 0
+   TRACE PROPERTY  mn(nch_25od28)  l l 0
+   TRACE PROPERTY  mn(nch_25od28)  w w 0
+   TRACE PROPERTY  mn(nch_25od28_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_25od28_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_25ud)  l l 0
+   TRACE PROPERTY  mn(nch_25ud)  w w 0
+   TRACE PROPERTY  mn(nch_33)  l l 0
+   TRACE PROPERTY  mn(nch_33)  w w 0
+   TRACE PROPERTY  mn(nch_33_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_33_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_dnw_1tr)  l l 0
+   TRACE PROPERTY  mn(nch_dnw_1tr)  w w 0
+   TRACE PROPERTY  mn(nch_dnw_w)  l l 0
+   TRACE PROPERTY  mn(nch_dnw_w)  w w 0
+   TRACE PROPERTY  mn(nch_dnw_w_lvt)  l l 0
+   TRACE PROPERTY  mn(nch_dnw_w_lvt)  w w 0
+   TRACE PROPERTY  mn(nch_esd18)  l l 0
+   TRACE PROPERTY  mn(nch_esd18)  w w 0
+   TRACE PROPERTY  mn(nch_esd18_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_esd18_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_hvt)  l l 0
+   TRACE PROPERTY  mn(nch_hvt)  w w 0
+   TRACE PROPERTY  mn(nch_hvt_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_hvt_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_lpg)  l l 0
+   TRACE PROPERTY  mn(nch_lpg)  w w 0
+   TRACE PROPERTY  mn(nch_lpghvt)  l l 0
+   TRACE PROPERTY  mn(nch_lpghvt)  w w 0
+   TRACE PROPERTY  mn(nch_lpgna)  l l 0
+   TRACE PROPERTY  mn(nch_lpgna)  w w 0
+   TRACE PROPERTY  mn(nch_lvt)  l l 0
+   TRACE PROPERTY  mn(nch_lvt)  w w 0
+   TRACE PROPERTY  mn(nch_lvt_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_lvt_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_mlvt)  l l 0
+   TRACE PROPERTY  mn(nch_mlvt)  w w 0
+   TRACE PROPERTY  mn(nch_mlvt_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_mlvt_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_na)  l l 0
+   TRACE PROPERTY  mn(nch_na)  w w 0
+   TRACE PROPERTY  mn(nch_na18)  l l 0
+   TRACE PROPERTY  mn(nch_na18)  w w 0
+   TRACE PROPERTY  mn(nch_na25)  l l 0
+   TRACE PROPERTY  mn(nch_na25)  w w 0
+   TRACE PROPERTY  mn(nch_na25od)  l l 0
+   TRACE PROPERTY  mn(nch_na25od)  w w 0
+   TRACE PROPERTY  mn(nch_na25ud)  l l 0
+   TRACE PROPERTY  mn(nch_na25ud)  w w 0
+   TRACE PROPERTY  mn(nch_na33)  l l 0
+   TRACE PROPERTY  mn(nch_na33)  w w 0
+   TRACE PROPERTY  mn(nch_timer)  l l 0
+   TRACE PROPERTY  mn(nch_timer)  w w 0
+   TRACE PROPERTY  mn(nch_uhvt)  l l 0
+   TRACE PROPERTY  mn(nch_uhvt)  w w 0
+   TRACE PROPERTY  mn(nch_uhvt_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_uhvt_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_ulvt)  l l 0
+   TRACE PROPERTY  mn(nch_ulvt)  w w 0
+   TRACE PROPERTY  mn(nch_ulvt_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_ulvt_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_w)  l l 0
+   TRACE PROPERTY  mn(nch_w)  w w 0
+   TRACE PROPERTY  mn(nch_w_lvt)  l l 0
+   TRACE PROPERTY  mn(nch_w_lvt)  w w 0
+   TRACE PROPERTY  mn(nchpd_dphcsr)  l l 0
+   TRACE PROPERTY  mn(nchpd_dphcsr)  w w 0
+   TRACE PROPERTY  mn(nchpd_dpsr)  l l 0
+   TRACE PROPERTY  mn(nchpd_dpsr)  w w 0
+   TRACE PROPERTY  mn(nchpd_hvtdphcsr)  l l 0
+   TRACE PROPERTY  mn(nchpd_hvtdphcsr)  w w 0
+   TRACE PROPERTY  mn(nchpd_hvtdpsr)  l l 0
+   TRACE PROPERTY  mn(nchpd_hvtdpsr)  w w 0
+   TRACE PROPERTY  mn(nchpd_hvtsr)  l l 0
+   TRACE PROPERTY  mn(nchpd_hvtsr)  w w 0
+   TRACE PROPERTY  mn(nchpd_lpgdpsr)  l l 0
+   TRACE PROPERTY  mn(nchpd_lpgdpsr)  w w 0
+   TRACE PROPERTY  mn(nchpd_lpgsr)  l l 0
+   TRACE PROPERTY  mn(nchpd_lpgsr)  w w 0
+   TRACE PROPERTY  mn(nchpd_lpgtpsr)  l l 0
+   TRACE PROPERTY  mn(nchpd_lpgtpsr)  w w 0
+   TRACE PROPERTY  mn(nchpd_sr)  l l 0
+   TRACE PROPERTY  mn(nchpd_sr)  w w 0
+   TRACE PROPERTY  mn(nchpd_ulpdpsr)  l l 0
+   TRACE PROPERTY  mn(nchpd_ulpdpsr)  w w 0
+   TRACE PROPERTY  mn(nchpd_ulpsr)  l l 0
+   TRACE PROPERTY  mn(nchpd_ulpsr)  w w 0
+   TRACE PROPERTY  mn(nchpd_wisr)  l l 0
+   TRACE PROPERTY  mn(nchpd_wisr)  w w 0
+   TRACE PROPERTY  mn(nchpd_wosr)  l l 0
+   TRACE PROPERTY  mn(nchpd_wosr)  w w 0
+   TRACE PROPERTY  mn(nchpg_dphcsr)  l l 0
+   TRACE PROPERTY  mn(nchpg_dphcsr)  w w 0
+   TRACE PROPERTY  mn(nchpg_dpsr)  l l 0
+   TRACE PROPERTY  mn(nchpg_dpsr)  w w 0
+   TRACE PROPERTY  mn(nchpg_hvtdphcsr)  l l 0
+   TRACE PROPERTY  mn(nchpg_hvtdphcsr)  w w 0
+   TRACE PROPERTY  mn(nchpg_hvtdpsr)  l l 0
+   TRACE PROPERTY  mn(nchpg_hvtdpsr)  w w 0
+   TRACE PROPERTY  mn(nchpg_hvtsr)  l l 0
+   TRACE PROPERTY  mn(nchpg_hvtsr)  w w 0
+   TRACE PROPERTY  mn(nchpg_lpgdpsr)  l l 0
+   TRACE PROPERTY  mn(nchpg_lpgdpsr)  w w 0
+   TRACE PROPERTY  mn(nchpg_lpgsr)  l l 0
+   TRACE PROPERTY  mn(nchpg_lpgsr)  w w 0
+   TRACE PROPERTY  mn(nchpg_lpgtpsr)  l l 0
+   TRACE PROPERTY  mn(nchpg_lpgtpsr)  w w 0
+   TRACE PROPERTY  mn(nchpg_sr)  l l 0
+   TRACE PROPERTY  mn(nchpg_sr)  w w 0
+   TRACE PROPERTY  mn(nchpg_ulpdpsr)  l l 0
+   TRACE PROPERTY  mn(nchpg_ulpdpsr)  w w 0
+   TRACE PROPERTY  mn(nchpg_ulpsr)  l l 0
+   TRACE PROPERTY  mn(nchpg_ulpsr)  w w 0
+   TRACE PROPERTY  mn(nchpg_wisr)  l l 0
+   TRACE PROPERTY  mn(nchpg_wisr)  w w 0
+   TRACE PROPERTY  mn(nchpg_wosr)  l l 0
+   TRACE PROPERTY  mn(nchpg_wosr)  w w 0
+   TRACE PROPERTY  mp(pch)  l l 0
+   TRACE PROPERTY  mp(pch)  w w 0
+   TRACE PROPERTY  mp(pch_18)  l l 0
+   TRACE PROPERTY  mp(pch_18)  w w 0
+   TRACE PROPERTY  mp(pch_25)  l l 0
+   TRACE PROPERTY  mp(pch_25)  w w 0
+   TRACE PROPERTY  mp(pch_25od)  l l 0
+   TRACE PROPERTY  mp(pch_25od)  w w 0
+   TRACE PROPERTY  mp(pch_25od28)  l l 0
+   TRACE PROPERTY  mp(pch_25od28)  w w 0
+   TRACE PROPERTY  mp(pch_25ud)  l l 0
+   TRACE PROPERTY  mp(pch_25ud)  w w 0
+   TRACE PROPERTY  mp(pch_33)  l l 0
+   TRACE PROPERTY  mp(pch_33)  w w 0
+   TRACE PROPERTY  mp(pch_edc)  l l 0
+   TRACE PROPERTY  mp(pch_edc)  w w 0
+   TRACE PROPERTY  mp(pch_hvt)  l l 0
+   TRACE PROPERTY  mp(pch_hvt)  w w 0
+   TRACE PROPERTY  mp(pch_lpg)  l l 0
+   TRACE PROPERTY  mp(pch_lpg)  w w 0
+   TRACE PROPERTY  mp(pch_lpghvt)  l l 0
+   TRACE PROPERTY  mp(pch_lpghvt)  w w 0
+   TRACE PROPERTY  mp(pch_lvt)  l l 0
+   TRACE PROPERTY  mp(pch_lvt)  w w 0
+   TRACE PROPERTY  mp(pch_mlvt)  l l 0
+   TRACE PROPERTY  mp(pch_mlvt)  w w 0
+   TRACE PROPERTY  mp(pch_timer)  l l 0
+   TRACE PROPERTY  mp(pch_timer)  w w 0
+   TRACE PROPERTY  mp(pch_uhvt)  l l 0
+   TRACE PROPERTY  mp(pch_uhvt)  w w 0
+   TRACE PROPERTY  mp(pch_ulvt)  l l 0
+   TRACE PROPERTY  mp(pch_ulvt)  w w 0
+   TRACE PROPERTY  mp(pch_w)  l l 0
+   TRACE PROPERTY  mp(pch_w)  w w 0
+   TRACE PROPERTY  mp(pch_w_lvt)  l l 0
+   TRACE PROPERTY  mp(pch_w_lvt)  w w 0
+   TRACE PROPERTY  mp(pchpu_dphcsr)  l l 0
+   TRACE PROPERTY  mp(pchpu_dphcsr)  w w 0
+   TRACE PROPERTY  mp(pchpu_dpsr)  l l 0
+   TRACE PROPERTY  mp(pchpu_dpsr)  w w 0
+   TRACE PROPERTY  mp(pchpu_hvtdphcsr)  l l 0
+   TRACE PROPERTY  mp(pchpu_hvtdphcsr)  w w 0
+   TRACE PROPERTY  mp(pchpu_hvtdpsr)  l l 0
+   TRACE PROPERTY  mp(pchpu_hvtdpsr)  w w 0
+   TRACE PROPERTY  mp(pchpu_hvtsr)  l l 0
+   TRACE PROPERTY  mp(pchpu_hvtsr)  w w 0
+   TRACE PROPERTY  mp(pchpu_lpgdpsr)  l l 0
+   TRACE PROPERTY  mp(pchpu_lpgdpsr)  w w 0
+   TRACE PROPERTY  mp(pchpu_lpgsr)  l l 0
+   TRACE PROPERTY  mp(pchpu_lpgsr)  w w 0
+   TRACE PROPERTY  mp(pchpu_lpgtpsr)  l l 0
+   TRACE PROPERTY  mp(pchpu_lpgtpsr)  w w 0
+   TRACE PROPERTY  mp(pchpu_sr)  l l 0
+   TRACE PROPERTY  mp(pchpu_sr)  w w 0
+   TRACE PROPERTY  mp(pchpu_ulpdpsr)  l l 0
+   TRACE PROPERTY  mp(pchpu_ulpdpsr)  w w 0
+   TRACE PROPERTY  mp(pchpu_ulpsr)  l l 0
+   TRACE PROPERTY  mp(pchpu_ulpsr)  w w 0
+   TRACE PROPERTY  mp(pchpu_wisr)  l l 0
+   TRACE PROPERTY  mp(pchpu_wisr)  w w 0
+   TRACE PROPERTY  mp(pchpu_wosr)  l l 0
+   TRACE PROPERTY  mp(pchpu_wosr)  w w 0
+   TRACE PROPERTY  q(npn10)  a a 0
+   TRACE PROPERTY  q(npn10_s)  a a 0
+   TRACE PROPERTY  q(npn2)  a a 0
+   TRACE PROPERTY  q(npn2_s)  a a 0
+   TRACE PROPERTY  q(npn5)  a a 0
+   TRACE PROPERTY  q(npn5_s)  a a 0
+   TRACE PROPERTY  q(pnp10)  a a 0
+   TRACE PROPERTY  q(pnp10_s)  a a 0
+   TRACE PROPERTY  q(pnp2)  a a 0
+   TRACE PROPERTY  q(pnp2_s)  a a 0
+   TRACE PROPERTY  q(pnp5)  a a 0
+   TRACE PROPERTY  q(pnp5_s)  a a 0
+   TRACE PROPERTY  d(ndio)  a a 0
+   TRACE PROPERTY  d(ndio_18)  a a 0
+   TRACE PROPERTY  d(ndio_25)  a a 0
+   TRACE PROPERTY  d(ndio_25od)  a a 0
+   TRACE PROPERTY  d(ndio_25od28)  a a 0
+   TRACE PROPERTY  d(ndio_25ud)  a a 0
+   TRACE PROPERTY  d(ndio_33)  a a 0
+   TRACE PROPERTY  d(ndio_esd)  a a 0
+   TRACE PROPERTY  d(ndio_hvt)  a a 0
+   TRACE PROPERTY  d(ndio_lpg)  a a 0
+   TRACE PROPERTY  d(ndio_lpghvt)  a a 0
+   TRACE PROPERTY  d(ndio_lpgna)  a a 0
+   TRACE PROPERTY  d(ndio_lvt)  a a 0
+   TRACE PROPERTY  d(ndio_mlvt)  a a 0
+   TRACE PROPERTY  d(ndio_na)  a a 0
+   TRACE PROPERTY  d(ndio_na18)  a a 0
+   TRACE PROPERTY  d(ndio_na25)  a a 0
+   TRACE PROPERTY  d(ndio_na25od)  a a 0
+   TRACE PROPERTY  d(ndio_na25ud)  a a 0
+   TRACE PROPERTY  d(ndio_na33)  a a 0
+   TRACE PROPERTY  d(ndio_uhvt)  a a 0
+   TRACE PROPERTY  d(ndio_w)  a a 0
+   TRACE PROPERTY  d(nwdio)  a a 0
+   TRACE PROPERTY  d(nwdio_18)  a a 0
+   TRACE PROPERTY  d(nwdio_25)  a a 0
+   TRACE PROPERTY  d(nwdio_33)  a a 0
+   TRACE PROPERTY  d(pdio)  a a 0
+   TRACE PROPERTY  d(pdio_18)  a a 0
+   TRACE PROPERTY  d(pdio_25)  a a 0
+   TRACE PROPERTY  d(pdio_25od)  a a 0
+   TRACE PROPERTY  d(pdio_25od28)  a a 0
+   TRACE PROPERTY  d(pdio_25ud)  a a 0
+   TRACE PROPERTY  d(pdio_33)  a a 0
+   TRACE PROPERTY  d(pdio_hvt)  a a 0
+   TRACE PROPERTY  d(pdio_lpg)  a a 0
+   TRACE PROPERTY  d(pdio_lpghvt)  a a 0
+   TRACE PROPERTY  d(pdio_lvt)  a a 0
+   TRACE PROPERTY  d(pdio_mlvt)  a a 0
+   TRACE PROPERTY  d(pdio_uhvt)  a a 0
+   TRACE PROPERTY  d(pdio_w)  a a 0
+   TRACE PROPERTY  crtmom_rf  nv nv 0
+   TRACE PROPERTY  crtmom_rf  nh nh 0
+   TRACE PROPERTY  crtmom_rf  s s 0
+   TRACE PROPERTY  crtmom_rf  w w 0
+   TRACE PROPERTY  crtmom_rf  stm stm 0
+   TRACE PROPERTY  crtmom_rf  spm spm 0
+   TRACE PROPERTY  crtmom_rf_rdk  nv nv 0
+   TRACE PROPERTY  crtmom_rf_rdk  nh nh 0
+   TRACE PROPERTY  crtmom_rf_rdk  s s 0
+   TRACE PROPERTY  crtmom_rf_rdk  w w 0
+   TRACE PROPERTY  crtmom_rf_rdk  stm stm 0
+   TRACE PROPERTY  crtmom_rf_rdk  spm spm 0
+   TRACE PROPERTY  crtmom  nv nv 0
+   TRACE PROPERTY  crtmom  nh nh 0
+   TRACE PROPERTY  crtmom  s s 0
+   TRACE PROPERTY  crtmom  w w 0
+   TRACE PROPERTY  crtmom  stm stm 0
+   TRACE PROPERTY  crtmom  spm spm 0
+   TRACE PROPERTY  crtmom_2t  nv nv 0
+   TRACE PROPERTY  crtmom_2t  nh nh 0
+   TRACE PROPERTY  crtmom_2t  s s 0
+   TRACE PROPERTY  crtmom_2t  w w 0
+   TRACE PROPERTY  crtmom_2t  stm stm 0
+   TRACE PROPERTY  crtmom_2t  spm spm 0
+   TRACE PROPERTY  crtmom_mx  nv nv 0
+   TRACE PROPERTY  crtmom_mx  nh nh 0
+   TRACE PROPERTY  crtmom_mx  s s 0
+   TRACE PROPERTY  crtmom_mx  w w 0
+   TRACE PROPERTY  crtmom_mx  stm stm 0
+   TRACE PROPERTY  crtmom_mx  spm spm 0
+   TRACE PROPERTY  crtmom_mx  mf mf 0
+   TRACE PROPERTY  fmom  nr nr 0
+   TRACE PROPERTY  fmom  lr lr 0
+   TRACE PROPERTY  fmom  s s 0
+   TRACE PROPERTY  fmom  w w 0
+   TRACE PROPERTY  fmom  stm stm 0
+   TRACE PROPERTY  fmom  spm spm 0
+   TRACE PROPERTY  fmom_mx  nr nr 0
+   TRACE PROPERTY  fmom_mx  lr lr 0
+   TRACE PROPERTY  fmom_mx  s s 0
+   TRACE PROPERTY  fmom_mx  w w 0
+   TRACE PROPERTY  fmom_mx  stm stm 0
+   TRACE PROPERTY  fmom_mx  spm spm 0
+   TRACE PROPERTY  fmom_mx  mf mf 0
+   TRACE PROPERTY  lincap  lr lr 0
+   TRACE PROPERTY  lincap  wr wr 0
+   TRACE PROPERTY  lincap  mr mr 0
+   TRACE PROPERTY  lincap_25  lr lr 0
+   TRACE PROPERTY  lincap_25  wr wr 0
+   TRACE PROPERTY  lincap_25  mr mr 0
+   TRACE PROPERTY  lincap_rf  lr lr 0
+   TRACE PROPERTY  lincap_rf  wr wr 0
+   TRACE PROPERTY  lincap_rf  br br 0
+   TRACE PROPERTY  lincap_rf  gr gr 0
+   TRACE PROPERTY  lincap_rf_25  lr lr 0
+   TRACE PROPERTY  lincap_rf_25  wr wr 0
+   TRACE PROPERTY  lincap_rf_25  br br 0
+   TRACE PROPERTY  lincap_rf_25  gr gr 0
+   TRACE PROPERTY  lowcpad_d15  lt lt 0
+   TRACE PROPERTY  lowcpad_d15  wt wt 0
+   TRACE PROPERTY  lowcpad_d15  lay lay 0
+   TRACE PROPERTY  lowcpad_d23  lt lt 0
+   TRACE PROPERTY  lowcpad_d23  wt wt 0
+   TRACE PROPERTY  lowcpad_d23  lay lay 0
+   TRACE PROPERTY  mimcap_sin  lt lt 0
+   TRACE PROPERTY  mimcap_sin  wt wt 0
+   TRACE PROPERTY  mimcap_sin  mimflag mimflag 0
+   TRACE PROPERTY  mimcap_sin_3t  lt lt 0
+   TRACE PROPERTY  mimcap_sin_3t  wt wt 0
+   TRACE PROPERTY  mimcap_sin_3t  lay lay 0
+   TRACE PROPERTY  mimcap_sin_3t  mimflag mimflag 0
+   TRACE PROPERTY  mimcap_um_sin_rf  lt lt 0
+   TRACE PROPERTY  mimcap_um_sin_rf  wt wt 0
+   TRACE PROPERTY  mimcap_um_sin_rf  mimflag mimflag 0
+   TRACE PROPERTY  mimcap_woum_sin_rf  lt lt 0
+   TRACE PROPERTY  mimcap_woum_sin_rf  wt wt 0
+   TRACE PROPERTY  mimcap_woum_sin_rf  lay lay 0
+   TRACE PROPERTY  mimcap_woum_sin_rf  mimflag mimflag 0
+   TRACE PROPERTY  moscap_rf  lr lr 0
+   TRACE PROPERTY  moscap_rf  wr wr 0
+   TRACE PROPERTY  moscap_rf  br br 0
+   TRACE PROPERTY  moscap_rf  gr gr 0
+   TRACE PROPERTY  moscap_rf18  lr lr 0
+   TRACE PROPERTY  moscap_rf18  wr wr 0
+   TRACE PROPERTY  moscap_rf18  br br 0
+   TRACE PROPERTY  moscap_rf18  gr gr 0
+   TRACE PROPERTY  moscap_rf18_nw  lr lr 0
+   TRACE PROPERTY  moscap_rf18_nw  wr wr 0
+   TRACE PROPERTY  moscap_rf18_nw  br br 0
+   TRACE PROPERTY  moscap_rf18_nw  gr gr 0
+   TRACE PROPERTY  moscap_rf25  lr lr 0
+   TRACE PROPERTY  moscap_rf25  wr wr 0
+   TRACE PROPERTY  moscap_rf25  br br 0
+   TRACE PROPERTY  moscap_rf25  gr gr 0
+   TRACE PROPERTY  moscap_rf25_nw  lr lr 0
+   TRACE PROPERTY  moscap_rf25_nw  wr wr 0
+   TRACE PROPERTY  moscap_rf25_nw  br br 0
+   TRACE PROPERTY  moscap_rf25_nw  gr gr 0
+   TRACE PROPERTY  moscap_rf33  lr lr 0
+   TRACE PROPERTY  moscap_rf33  wr wr 0
+   TRACE PROPERTY  moscap_rf33  br br 0
+   TRACE PROPERTY  moscap_rf33  gr gr 0
+   TRACE PROPERTY  moscap_rf33_nw  lr lr 0
+   TRACE PROPERTY  moscap_rf33_nw  wr wr 0
+   TRACE PROPERTY  moscap_rf33_nw  br br 0
+   TRACE PROPERTY  moscap_rf33_nw  gr gr 0
+   TRACE PROPERTY  moscap_rf_hvt  lr lr 0
+   TRACE PROPERTY  moscap_rf_hvt  wr wr 0
+   TRACE PROPERTY  moscap_rf_hvt  br br 0
+   TRACE PROPERTY  moscap_rf_hvt  gr gr 0
+   TRACE PROPERTY  moscap_rf_hvt_nw  lr lr 0
+   TRACE PROPERTY  moscap_rf_hvt_nw  wr wr 0
+   TRACE PROPERTY  moscap_rf_hvt_nw  br br 0
+   TRACE PROPERTY  moscap_rf_hvt_nw  gr gr 0
+   TRACE PROPERTY  moscap_rf_nw  lr lr 0
+   TRACE PROPERTY  moscap_rf_nw  wr wr 0
+   TRACE PROPERTY  moscap_rf_nw  br br 0
+   TRACE PROPERTY  moscap_rf_nw  gr gr 0
+   TRACE PROPERTY  moscap_rf_rdk  lr lr 0
+   TRACE PROPERTY  moscap_rf_rdk  wr wr 0
+   TRACE PROPERTY  moscap_rf_rdk  br br 0
+   TRACE PROPERTY  moscap_rf_rdk  gr gr 0
+   TRACE PROPERTY  ndio_hia_rf  al al 0
+   TRACE PROPERTY  ndio_hia_rf  aw aw 0
+   TRACE PROPERTY  nmos_rf  wr wr 0
+   TRACE PROPERTY  nmos_rf  lr lr 0
+   TRACE PROPERTY  nmos_rf  nr nr 0
+   TRACE PROPERTY  nmos_rf_18  wr wr 0
+   TRACE PROPERTY  nmos_rf_18  lr lr 0
+   TRACE PROPERTY  nmos_rf_18  nr nr 0
+   TRACE PROPERTY  nmos_rf_18_6t  wr wr 0
+   TRACE PROPERTY  nmos_rf_18_6t  lr lr 0
+   TRACE PROPERTY  nmos_rf_18_6t  nr nr 0
+   TRACE PROPERTY  nmos_rf_18_nodnw  wr wr 0
+   TRACE PROPERTY  nmos_rf_18_nodnw  lr lr 0
+   TRACE PROPERTY  nmos_rf_18_nodnw  nr nr 0
+   TRACE PROPERTY  nmos_rf_25  wr wr 0
+   TRACE PROPERTY  nmos_rf_25  lr lr 0
+   TRACE PROPERTY  nmos_rf_25  nr nr 0
+   TRACE PROPERTY  nmos_rf_25_6t  wr wr 0
+   TRACE PROPERTY  nmos_rf_25_6t  lr lr 0
+   TRACE PROPERTY  nmos_rf_25_6t  nr nr 0
+   TRACE PROPERTY  nmos_rf_25_nodnw  wr wr 0
+   TRACE PROPERTY  nmos_rf_25_nodnw  lr lr 0
+   TRACE PROPERTY  nmos_rf_25_nodnw  nr nr 0
+   TRACE PROPERTY  nmos_rf_25_nodnwod  wr wr 0
+   TRACE PROPERTY  nmos_rf_25_nodnwod  lr lr 0
+   TRACE PROPERTY  nmos_rf_25_nodnwod  nr nr 0
+   TRACE PROPERTY  nmos_rf_25_nodnwud  wr wr 0
+   TRACE PROPERTY  nmos_rf_25_nodnwud  lr lr 0
+   TRACE PROPERTY  nmos_rf_25_nodnwud  nr nr 0
+   TRACE PROPERTY  nmos_rf_25od  wr wr 0
+   TRACE PROPERTY  nmos_rf_25od  lr lr 0
+   TRACE PROPERTY  nmos_rf_25od  nr nr 0
+   TRACE PROPERTY  nmos_rf_25od33_6t  wr wr 0
+   TRACE PROPERTY  nmos_rf_25od33_6t  lr lr 0
+   TRACE PROPERTY  nmos_rf_25od33_6t  nr nr 0
+   TRACE PROPERTY  nmos_rf_25ud  wr wr 0
+   TRACE PROPERTY  nmos_rf_25ud  lr lr 0
+   TRACE PROPERTY  nmos_rf_25ud  nr nr 0
+   TRACE PROPERTY  nmos_rf_25ud18_6t  wr wr 0
+   TRACE PROPERTY  nmos_rf_25ud18_6t  lr lr 0
+   TRACE PROPERTY  nmos_rf_25ud18_6t  nr nr 0
+   TRACE PROPERTY  nmos_rf_33  wr wr 0
+   TRACE PROPERTY  nmos_rf_33  lr lr 0
+   TRACE PROPERTY  nmos_rf_33  nr nr 0
+   TRACE PROPERTY  nmos_rf_33_6t  wr wr 0
+   TRACE PROPERTY  nmos_rf_33_6t  lr lr 0
+   TRACE PROPERTY  nmos_rf_33_6t  nr nr 0
+   TRACE PROPERTY  nmos_rf_33_nodnw  wr wr 0
+   TRACE PROPERTY  nmos_rf_33_nodnw  lr lr 0
+   TRACE PROPERTY  nmos_rf_33_nodnw  nr nr 0
+   TRACE PROPERTY  nmos_rf_6t  wr wr 0
+   TRACE PROPERTY  nmos_rf_6t  lr lr 0
+   TRACE PROPERTY  nmos_rf_6t  nr nr 0
+   TRACE PROPERTY  nmos_rf_cas_nw  wr wr 0
+   TRACE PROPERTY  nmos_rf_cas_nw  lr lr 0
+   TRACE PROPERTY  nmos_rf_cas_nw  nr nr 0
+   TRACE PROPERTY  nmos_rf_cas_nw  wrr wrr 0
+   TRACE PROPERTY  nmos_rf_cas_nw  lrr lrr 0
+   TRACE PROPERTY  nmos_rf_cas_nw  nrr nrr 0
+   TRACE PROPERTY  nmos_rf_cross_nw  wr wr 0
+   TRACE PROPERTY  nmos_rf_cross_nw  lr lr 0
+   TRACE PROPERTY  nmos_rf_cross_nw  nr nr 0
+   TRACE PROPERTY  nmos_rf_diff_nw  wr wr 0
+   TRACE PROPERTY  nmos_rf_diff_nw  lr lr 0
+   TRACE PROPERTY  nmos_rf_diff_nw  nr nr 0
+   TRACE PROPERTY  nmos_rf_hvt  wr wr 0
+   TRACE PROPERTY  nmos_rf_hvt  lr lr 0
+   TRACE PROPERTY  nmos_rf_hvt  nr nr 0
+   TRACE PROPERTY  nmos_rf_hvt_6t  wr wr 0
+   TRACE PROPERTY  nmos_rf_hvt_6t  lr lr 0
+   TRACE PROPERTY  nmos_rf_hvt_6t  nr nr 0
+   TRACE PROPERTY  nmos_rf_hvt_nodnw  wr wr 0
+   TRACE PROPERTY  nmos_rf_hvt_nodnw  lr lr 0
+   TRACE PROPERTY  nmos_rf_hvt_nodnw  nr nr 0
+   TRACE PROPERTY  nmos_rf_lvt  wr wr 0
+   TRACE PROPERTY  nmos_rf_lvt  lr lr 0
+   TRACE PROPERTY  nmos_rf_lvt  nr nr 0
+   TRACE PROPERTY  nmos_rf_lvt_6t  wr wr 0
+   TRACE PROPERTY  nmos_rf_lvt_6t  lr lr 0
+   TRACE PROPERTY  nmos_rf_lvt_6t  nr nr 0
+   TRACE PROPERTY  nmos_rf_lvt_nodnw  wr wr 0
+   TRACE PROPERTY  nmos_rf_lvt_nodnw  lr lr 0
+   TRACE PROPERTY  nmos_rf_lvt_nodnw  nr nr 0
+   TRACE PROPERTY  nmos_rf_mlvt  wr wr 0
+   TRACE PROPERTY  nmos_rf_mlvt  lr lr 0
+   TRACE PROPERTY  nmos_rf_mlvt  nr nr 0
+   TRACE PROPERTY  nmos_rf_mlvt_6t  wr wr 0
+   TRACE PROPERTY  nmos_rf_mlvt_6t  lr lr 0
+   TRACE PROPERTY  nmos_rf_mlvt_6t  nr nr 0
+   TRACE PROPERTY  nmos_rf_mlvt_nodnw  wr wr 0
+   TRACE PROPERTY  nmos_rf_mlvt_nodnw  lr lr 0
+   TRACE PROPERTY  nmos_rf_mlvt_nodnw  nr nr 0
+   TRACE PROPERTY  nmos_rf_na18  wr wr 0
+   TRACE PROPERTY  nmos_rf_na18  lr lr 0
+   TRACE PROPERTY  nmos_rf_na18  nr nr 0
+   TRACE PROPERTY  nmos_rf_nodnw  wr wr 0
+   TRACE PROPERTY  nmos_rf_nodnw  lr lr 0
+   TRACE PROPERTY  nmos_rf_nodnw  nr nr 0
+   TRACE PROPERTY  nmos_rf_rdk  wr wr 0
+   TRACE PROPERTY  nmos_rf_rdk  lr lr 0
+   TRACE PROPERTY  nmos_rf_rdk  nr nr 0
+   TRACE PROPERTY  nmoscap  wr wr 0
+   TRACE PROPERTY  nmoscap  lr lr 0
+   TRACE PROPERTY  nmoscap_18  wr wr 0
+   TRACE PROPERTY  nmoscap_18  lr lr 0
+   TRACE PROPERTY  nmoscap_25  wr wr 0
+   TRACE PROPERTY  nmoscap_25  lr lr 0
+   TRACE PROPERTY  nmoscap_33  wr wr 0
+   TRACE PROPERTY  nmoscap_33  lr lr 0
+   TRACE PROPERTY  nmoscap_lpg  wr wr 0
+   TRACE PROPERTY  nmoscap_lpg  lr lr 0
+   TRACE PROPERTY  pdio_hia_rf  al al 0
+   TRACE PROPERTY  pdio_hia_rf  aw aw 0
+   TRACE PROPERTY  pmos_rf  wr wr 0
+   TRACE PROPERTY  pmos_rf  lr lr 0
+   TRACE PROPERTY  pmos_rf  nr nr 0
+   TRACE PROPERTY  pmos_rf_18  wr wr 0
+   TRACE PROPERTY  pmos_rf_18  lr lr 0
+   TRACE PROPERTY  pmos_rf_18  nr nr 0
+   TRACE PROPERTY  pmos_rf_18_5t  wr wr 0
+   TRACE PROPERTY  pmos_rf_18_5t  lr lr 0
+   TRACE PROPERTY  pmos_rf_18_5t  nr nr 0
+   TRACE PROPERTY  pmos_rf_18_nw  wr wr 0
+   TRACE PROPERTY  pmos_rf_18_nw  lr lr 0
+   TRACE PROPERTY  pmos_rf_18_nw  nr nr 0
+   TRACE PROPERTY  pmos_rf_18_nw_5t  wr wr 0
+   TRACE PROPERTY  pmos_rf_18_nw_5t  lr lr 0
+   TRACE PROPERTY  pmos_rf_18_nw_5t  nr nr 0
+   TRACE PROPERTY  pmos_rf_25  wr wr 0
+   TRACE PROPERTY  pmos_rf_25  lr lr 0
+   TRACE PROPERTY  pmos_rf_25  nr nr 0
+   TRACE PROPERTY  pmos_rf_25_5t  wr wr 0
+   TRACE PROPERTY  pmos_rf_25_5t  lr lr 0
+   TRACE PROPERTY  pmos_rf_25_5t  nr nr 0
+   TRACE PROPERTY  pmos_rf_25_nw  wr wr 0
+   TRACE PROPERTY  pmos_rf_25_nw  lr lr 0
+   TRACE PROPERTY  pmos_rf_25_nw  nr nr 0
+   TRACE PROPERTY  pmos_rf_25_nw_5t  wr wr 0
+   TRACE PROPERTY  pmos_rf_25_nw_5t  lr lr 0
+   TRACE PROPERTY  pmos_rf_25_nw_5t  nr nr 0
+   TRACE PROPERTY  pmos_rf_25_nwod  wr wr 0
+   TRACE PROPERTY  pmos_rf_25_nwod  lr lr 0
+   TRACE PROPERTY  pmos_rf_25_nwod  nr nr 0
+   TRACE PROPERTY  pmos_rf_25_nwud  wr wr 0
+   TRACE PROPERTY  pmos_rf_25_nwud  lr lr 0
+   TRACE PROPERTY  pmos_rf_25_nwud  nr nr 0
+   TRACE PROPERTY  pmos_rf_25od  wr wr 0
+   TRACE PROPERTY  pmos_rf_25od  lr lr 0
+   TRACE PROPERTY  pmos_rf_25od  nr nr 0
+   TRACE PROPERTY  pmos_rf_25od33_5t  wr wr 0
+   TRACE PROPERTY  pmos_rf_25od33_5t  lr lr 0
+   TRACE PROPERTY  pmos_rf_25od33_5t  nr nr 0
+   TRACE PROPERTY  pmos_rf_25od33_nw_5t  wr wr 0
+   TRACE PROPERTY  pmos_rf_25od33_nw_5t  lr lr 0
+   TRACE PROPERTY  pmos_rf_25od33_nw_5t  nr nr 0
+   TRACE PROPERTY  pmos_rf_25ud  wr wr 0
+   TRACE PROPERTY  pmos_rf_25ud  lr lr 0
+   TRACE PROPERTY  pmos_rf_25ud  nr nr 0
+   TRACE PROPERTY  pmos_rf_25ud18_5t  wr wr 0
+   TRACE PROPERTY  pmos_rf_25ud18_5t  lr lr 0
+   TRACE PROPERTY  pmos_rf_25ud18_5t  nr nr 0
+   TRACE PROPERTY  pmos_rf_25ud18_nw_5t  wr wr 0
+   TRACE PROPERTY  pmos_rf_25ud18_nw_5t  lr lr 0
+   TRACE PROPERTY  pmos_rf_25ud18_nw_5t  nr nr 0
+   TRACE PROPERTY  pmos_rf_33  wr wr 0
+   TRACE PROPERTY  pmos_rf_33  lr lr 0
+   TRACE PROPERTY  pmos_rf_33  nr nr 0
+   TRACE PROPERTY  pmos_rf_33_5t  wr wr 0
+   TRACE PROPERTY  pmos_rf_33_5t  lr lr 0
+   TRACE PROPERTY  pmos_rf_33_5t  nr nr 0
+   TRACE PROPERTY  pmos_rf_33_nw  wr wr 0
+   TRACE PROPERTY  pmos_rf_33_nw  lr lr 0
+   TRACE PROPERTY  pmos_rf_33_nw  nr nr 0
+   TRACE PROPERTY  pmos_rf_33_nw_5t  wr wr 0
+   TRACE PROPERTY  pmos_rf_33_nw_5t  lr lr 0
+   TRACE PROPERTY  pmos_rf_33_nw_5t  nr nr 0
+   TRACE PROPERTY  pmos_rf_5t  wr wr 0
+   TRACE PROPERTY  pmos_rf_5t  lr lr 0
+   TRACE PROPERTY  pmos_rf_5t  nr nr 0
+   TRACE PROPERTY  pmos_rf_hvt  wr wr 0
+   TRACE PROPERTY  pmos_rf_hvt  lr lr 0
+   TRACE PROPERTY  pmos_rf_hvt  nr nr 0
+   TRACE PROPERTY  pmos_rf_hvt_5t  wr wr 0
+   TRACE PROPERTY  pmos_rf_hvt_5t  lr lr 0
+   TRACE PROPERTY  pmos_rf_hvt_5t  nr nr 0
+   TRACE PROPERTY  pmos_rf_hvt_nw  wr wr 0
+   TRACE PROPERTY  pmos_rf_hvt_nw  lr lr 0
+   TRACE PROPERTY  pmos_rf_hvt_nw  nr nr 0
+   TRACE PROPERTY  pmos_rf_hvt_nw_5t  wr wr 0
+   TRACE PROPERTY  pmos_rf_hvt_nw_5t  lr lr 0
+   TRACE PROPERTY  pmos_rf_hvt_nw_5t  nr nr 0
+   TRACE PROPERTY  pmos_rf_lvt  wr wr 0
+   TRACE PROPERTY  pmos_rf_lvt  lr lr 0
+   TRACE PROPERTY  pmos_rf_lvt  nr nr 0
+   TRACE PROPERTY  pmos_rf_lvt_5t  wr wr 0
+   TRACE PROPERTY  pmos_rf_lvt_5t  lr lr 0
+   TRACE PROPERTY  pmos_rf_lvt_5t  nr nr 0
+   TRACE PROPERTY  pmos_rf_lvt_nw  wr wr 0
+   TRACE PROPERTY  pmos_rf_lvt_nw  lr lr 0
+   TRACE PROPERTY  pmos_rf_lvt_nw  nr nr 0
+   TRACE PROPERTY  pmos_rf_lvt_nw_5t  wr wr 0
+   TRACE PROPERTY  pmos_rf_lvt_nw_5t  lr lr 0
+   TRACE PROPERTY  pmos_rf_lvt_nw_5t  nr nr 0
+   TRACE PROPERTY  pmos_rf_mlvt  wr wr 0
+   TRACE PROPERTY  pmos_rf_mlvt  lr lr 0
+   TRACE PROPERTY  pmos_rf_mlvt  nr nr 0
+   TRACE PROPERTY  pmos_rf_mlvt_5t  wr wr 0
+   TRACE PROPERTY  pmos_rf_mlvt_5t  lr lr 0
+   TRACE PROPERTY  pmos_rf_mlvt_5t  nr nr 0
+   TRACE PROPERTY  pmos_rf_mlvt_nw  wr wr 0
+   TRACE PROPERTY  pmos_rf_mlvt_nw  lr lr 0
+   TRACE PROPERTY  pmos_rf_mlvt_nw  nr nr 0
+   TRACE PROPERTY  pmos_rf_mlvt_nw_5t  wr wr 0
+   TRACE PROPERTY  pmos_rf_mlvt_nw_5t  lr lr 0
+   TRACE PROPERTY  pmos_rf_mlvt_nw_5t  nr nr 0
+   TRACE PROPERTY  pmos_rf_nw  wr wr 0
+   TRACE PROPERTY  pmos_rf_nw  lr lr 0
+   TRACE PROPERTY  pmos_rf_nw  nr nr 0
+   TRACE PROPERTY  pmos_rf_nw_5t  wr wr 0
+   TRACE PROPERTY  pmos_rf_nw_5t  lr lr 0
+   TRACE PROPERTY  pmos_rf_nw_5t  nr nr 0
+   TRACE PROPERTY  pmos_rf_rdk  wr wr 0
+   TRACE PROPERTY  pmos_rf_rdk  lr lr 0
+   TRACE PROPERTY  pmos_rf_rdk  nr nr 0
+   TRACE PROPERTY  pmoscap_rf  lr lr 0
+   TRACE PROPERTY  pmoscap_rf  wr wr 0
+   TRACE PROPERTY  pmoscap_rf  br br 0
+   TRACE PROPERTY  pmoscap_rf  gr gr 0
+   TRACE PROPERTY  pmoscap_rf18  lr lr 0
+   TRACE PROPERTY  pmoscap_rf18  wr wr 0
+   TRACE PROPERTY  pmoscap_rf18  br br 0
+   TRACE PROPERTY  pmoscap_rf18  gr gr 0
+   TRACE PROPERTY  pmoscap_rf25  lr lr 0
+   TRACE PROPERTY  pmoscap_rf25  wr wr 0
+   TRACE PROPERTY  pmoscap_rf25  br br 0
+   TRACE PROPERTY  pmoscap_rf25  gr gr 0
+   TRACE PROPERTY  probe1  a a 0
+   TRACE PROPERTY  probe1  pj pj 0
+   TRACE PROPERTY  probe2  a a 0
+   TRACE PROPERTY  probe2  pj pj 0
+   TRACE PROPERTY  probe3  a a 0
+   TRACE PROPERTY  probe3  pj pj 0
+   TRACE PROPERTY  probe4  a a 0
+   TRACE PROPERTY  probe4  pj pj 0
+   TRACE PROPERTY  probe5  a a 0
+   TRACE PROPERTY  probe5  pj pj 0
+   TRACE PROPERTY  probe6  a a 0
+   TRACE PROPERTY  probe6  pj pj 0
+   TRACE PROPERTY  probe7  a a 0
+   TRACE PROPERTY  probe7  pj pj 0
+   TRACE PROPERTY  rfesd_rf1  lay lay 0
+   TRACE PROPERTY  rfesd_rf2  lay lay 0
+   TRACE PROPERTY  rfesd_rf3  lay lay 0
+   TRACE PROPERTY  rfesd_rf4  lay lay 0
+   TRACE PROPERTY  rfesd_rf5  lay lay 0
+   TRACE PROPERTY  rfesd_rf6  lay lay 0
+   TRACE PROPERTY  rfesd_rf7  lay lay 0
+   TRACE PROPERTY  rfesd_rf8  lay lay 0
+   TRACE PROPERTY  rm1  w w 0
+   TRACE PROPERTY  rm1  l l 0
+   TRACE PROPERTY  rm10  w w 0
+   TRACE PROPERTY  rm10  l l 0
+   TRACE PROPERTY  rm2  w w 0
+   TRACE PROPERTY  rm2  l l 0
+   TRACE PROPERTY  rm3  w w 0
+   TRACE PROPERTY  rm3  l l 0
+   TRACE PROPERTY  rm4  w w 0
+   TRACE PROPERTY  rm4  l l 0
+   TRACE PROPERTY  rm5  w w 0
+   TRACE PROPERTY  rm5  l l 0
+   TRACE PROPERTY  rm6  w w 0
+   TRACE PROPERTY  rm6  l l 0
+   TRACE PROPERTY  rm7  w w 0
+   TRACE PROPERTY  rm7  l l 0
+   TRACE PROPERTY  rm8  w w 0
+   TRACE PROPERTY  rm8  l l 0
+   TRACE PROPERTY  rm9  w w 0
+   TRACE PROPERTY  rm9  l l 0
+   TRACE PROPERTY  rnodl  l l 0
+   TRACE PROPERTY  rnodl  w w 0
+   TRACE PROPERTY  rnodl_m  lr lr 0
+   TRACE PROPERTY  rnodl_m  wr wr 0
+   TRACE PROPERTY  rnods  l l 0
+   TRACE PROPERTY  rnods  w w 0
+   TRACE PROPERTY  rnods_m  lr lr 0
+   TRACE PROPERTY  rnods_m  wr wr 0
+   TRACE PROPERTY  rnodwo  l l 0
+   TRACE PROPERTY  rnodwo  w w 0
+   TRACE PROPERTY  rnodwo_m  lr lr 0
+   TRACE PROPERTY  rnodwo_m  wr wr 0
+   TRACE PROPERTY  rnpolyl  l l 0
+   TRACE PROPERTY  rnpolyl  w w 0
+   TRACE PROPERTY  rnpolyl_m  lr lr 0
+   TRACE PROPERTY  rnpolyl_m  wr wr 0
+   TRACE PROPERTY  rnpolys  l l 0
+   TRACE PROPERTY  rnpolys  w w 0
+   TRACE PROPERTY  rnpolys_m  lr lr 0
+   TRACE PROPERTY  rnpolys_m  wr wr 0
+   TRACE PROPERTY  rnpolywo  l l 0
+   TRACE PROPERTY  rnpolywo  w w 0
+   TRACE PROPERTY  rnpolywo_m  lr lr 0
+   TRACE PROPERTY  rnpolywo_m  wr wr 0
+   TRACE PROPERTY  rnwod  l l 0
+   TRACE PROPERTY  rnwod  w w 0
+   TRACE PROPERTY  rnwod_m  lr lr 0
+   TRACE PROPERTY  rnwod_m  wr wr 0
+   TRACE PROPERTY  rnwsti  l l 0
+   TRACE PROPERTY  rnwsti  w w 0
+   TRACE PROPERTY  rnwsti_m  lr lr 0
+   TRACE PROPERTY  rnwsti_m  wr wr 0
+   TRACE PROPERTY  rpodl  l l 0
+   TRACE PROPERTY  rpodl  w w 0
+   TRACE PROPERTY  rpodl_m  lr lr 0
+   TRACE PROPERTY  rpodl_m  wr wr 0
+   TRACE PROPERTY  rpods  l l 0
+   TRACE PROPERTY  rpods  w w 0
+   TRACE PROPERTY  rpods_m  lr lr 0
+   TRACE PROPERTY  rpods_m  wr wr 0
+   TRACE PROPERTY  rpodwo  l l 0
+   TRACE PROPERTY  rpodwo  w w 0
+   TRACE PROPERTY  rpodwo_m  lr lr 0
+   TRACE PROPERTY  rpodwo_m  wr wr 0
+   TRACE PROPERTY  rppolyl  l l 0
+   TRACE PROPERTY  rppolyl  w w 0
+   TRACE PROPERTY  rppolyl_m  lr lr 0
+   TRACE PROPERTY  rppolyl_m  wr wr 0
+   TRACE PROPERTY  rppolyl_rf  w w 0
+   TRACE PROPERTY  rppolyl_rf  l l 0
+   TRACE PROPERTY  rppolyl_rf_rdk  w w 0
+   TRACE PROPERTY  rppolyl_rf_rdk  l l 0
+   TRACE PROPERTY  rppolys  l l 0
+   TRACE PROPERTY  rppolys  w w 0
+   TRACE PROPERTY  rppolys_m  lr lr 0
+   TRACE PROPERTY  rppolys_m  wr wr 0
+   TRACE PROPERTY  rppolys_rf  w w 0
+   TRACE PROPERTY  rppolys_rf  l l 0
+   TRACE PROPERTY  rppolys_rf_rdk  w w 0
+   TRACE PROPERTY  rppolys_rf_rdk  l l 0
+   TRACE PROPERTY  rppolywo  l l 0
+   TRACE PROPERTY  rppolywo  w w 0
+   TRACE PROPERTY  rppolywo_m  lr lr 0
+   TRACE PROPERTY  rppolywo_m  wr wr 0
+   TRACE PROPERTY  rppolywo_rf  w w 0
+   TRACE PROPERTY  rppolywo_rf  l l 0
+   TRACE PROPERTY  rppolywo_rf_rdk  w w 0
+   TRACE PROPERTY  rppolywo_rf_rdk  l l 0
+   TRACE PROPERTY  sbd_rf  nf nf 0
+   TRACE PROPERTY  sbd_rf  w w 0
+   TRACE PROPERTY  sbd_rf  l l 0
+   TRACE PROPERTY  sbd_rf_nw  nf nf 0
+   TRACE PROPERTY  sbd_rf_nw  w w 0
+   TRACE PROPERTY  sbd_rf_nw  l l 0
+   TRACE PROPERTY  sline_gscpw_mu  l l 0
+   TRACE PROPERTY  sline_gscpw_mu  s s 0
+   TRACE PROPERTY  sline_gscpw_mu  w w 0
+   TRACE PROPERTY  sline_gscpw_mu  lay lay 0
+   TRACE PROPERTY  sline_ms_mu  l l 0
+   TRACE PROPERTY  sline_ms_mu  w w 0
+   TRACE PROPERTY  sline_ms_mu  lay lay 0
+   TRACE PROPERTY  spiral_std_mu_z  lay lay 0
+   TRACE PROPERTY  spiral_std_mu_z  w w 0.05
+   TRACE PROPERTY  spiral_std_mu_z  nr nr 0
+   TRACE PROPERTY  spiral_std_mu_z  rad rad 0
+   TRACE PROPERTY  spiral_std_mu_z  gdis gdis 0
+   TRACE PROPERTY  spiral_std_mu_z  spacing spacing 0
+   TRACE PROPERTY  spiral_std_mu_z_rdk  lay lay 0
+   TRACE PROPERTY  spiral_std_mu_z_rdk  w w 0.05
+   TRACE PROPERTY  spiral_std_mu_z_rdk  nr nr 0
+   TRACE PROPERTY  spiral_std_mu_z_rdk  rad rad 0
+   TRACE PROPERTY  spiral_std_mu_z_rdk  gdis gdis 0
+   TRACE PROPERTY  spiral_std_mu_z_rdk  spacing spacing 0
+   TRACE PROPERTY  spiral_sym_ct_mu_z  lay lay 0
+   TRACE PROPERTY  spiral_sym_ct_mu_z  w w 0.05
+   TRACE PROPERTY  spiral_sym_ct_mu_z  nr nr 0
+   TRACE PROPERTY  spiral_sym_ct_mu_z  rad rad 0
+   TRACE PROPERTY  spiral_sym_ct_mu_z  gdis gdis 0
+   TRACE PROPERTY  spiral_sym_ct_mu_z  spacing spacing 0
+   TRACE PROPERTY  spiral_sym_ct_mu_z_rdk  lay lay 0
+   TRACE PROPERTY  spiral_sym_ct_mu_z_rdk  w w 0.05
+   TRACE PROPERTY  spiral_sym_ct_mu_z_rdk  nr nr 0
+   TRACE PROPERTY  spiral_sym_ct_mu_z_rdk  rad rad 0
+   TRACE PROPERTY  spiral_sym_ct_mu_z_rdk  gdis gdis 0
+   TRACE PROPERTY  spiral_sym_ct_mu_z_rdk  spacing spacing 0
+   TRACE PROPERTY  spiral_sym_mu_z  lay lay 0
+   TRACE PROPERTY  spiral_sym_mu_z  w w 0.05
+   TRACE PROPERTY  spiral_sym_mu_z  nr nr 0
+   TRACE PROPERTY  spiral_sym_mu_z  rad rad 0
+   TRACE PROPERTY  spiral_sym_mu_z  gdis gdis 0
+   TRACE PROPERTY  spiral_sym_mu_z  spacing spacing 0
+   TRACE PROPERTY  spiral_sym_mu_z_rdk  lay lay 0
+   TRACE PROPERTY  spiral_sym_mu_z_rdk  w w 0.05
+   TRACE PROPERTY  spiral_sym_mu_z_rdk  nr nr 0
+   TRACE PROPERTY  spiral_sym_mu_z_rdk  rad rad 0
+   TRACE PROPERTY  spiral_sym_mu_z_rdk  gdis gdis 0
+   TRACE PROPERTY  spiral_sym_mu_z_rdk  spacing spacing 0
+   TRACE PROPERTY  xjvar  w w 0
+   TRACE PROPERTY  xjvar  l l 0
+   TRACE PROPERTY  xjvar  nr nr 0
+   TRACE PROPERTY  xjvar_nw  w w 0
+   TRACE PROPERTY  xjvar_nw  l l 0
+   TRACE PROPERTY  xjvar_nw  nr nr 0
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         TEAMD_HALFADDER
+SOURCE CELL NAME:         TEAMD_HALFADDER
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              6         6
+
+ Nets:              12        12
+
+ Instances:          8         8         MN (4 pins)
+                     8         8         MP (4 pins)
+                ------    ------
+ Total Inst:        16        16
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              6         6
+
+ Nets:               8         8
+
+ Instances:          1         1         MN (4 pins)
+                     1         1         SPUP_2_1 (4 pins)
+                     1         1         _invv (4 pins)
+                     1         1         _nand2v (5 pins)
+                     1         1         _nor2v (5 pins)
+                     1         1         _sdw2v (4 pins)
+                ------    ------
+ Total Inst:         6         6
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               6          6            0            0
+
+   Nets:                8          8            0            0
+
+   Instances:           1          1            0            0    MN(NCH)
+                        1          1            0            0    SPUP_2_1
+                        1          1            0            0    _invv
+                        1          1            0            0    _nand2v
+                        1          1            0            0    _nor2v
+                        1          1            0            0    _sdw2v
+                  -------    -------    ---------    ---------
+   Total Inst:          6          6            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        VDD GND A B SUM CARRY
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      0 sec
+Total Elapsed Time:  0 sec

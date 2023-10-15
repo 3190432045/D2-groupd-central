@@ -1,0 +1,227 @@
+
+
+==================================================================================
+=== CALIBRE::ERC-H SUMMARY REPORT
+===
+Execution Date/Time:          Mon Oct  9 12:17:20 2023
+Calibre Version:              v2021.3_35.19    Wed Sep 1 15:25:28 PDT 2021
+Rule File Pathname:           /home/jw26u22/d2/LVS/_calibre.lvs_
+Rule File Title:              
+Layout System:                GDSII
+Layout Path(s):               TEAMD_HALFADDER.calibre.db
+Layout Primary Cell:          TEAMD_HALFADDER
+Current Directory:            /home/jw26u22/d2/LVS
+User Name:                    jw26u22
+Maximum Results/ERC Check:    1000
+Maximum ERC Result Vertices:  4096
+ERC Results Database:         TEAMD_HALFADDER.erc.results (ASCII)
+Layout Depth:                 ALL
+Text Depth:                   PRIMARY
+Summary Report File:          TEAMD_HALFADDER.erc.summary (REPLACE)
+Geometry Flagging:            ACUTE = NO  SKEW = YES  ANGLED = NO  OFFGRID = YES
+                              NONSIMPLE POLYGON = NO  NONSIMPLE PATH = NO
+Excluded Cells:              
+CheckText Mapping:            COMMENT TEXT + RULE FILE INFORMATION
+Layers:                       MEMORY-BASED
+Keep Empty Checks:            YES
+----------------------------------------------------------------------------------
+--- RUNTIME WARNINGS
+---
+Layer 6 contains unmapped objects and is the source layer of LAYER MAP == 6 DATATYPE == 1.
+Layer 6 contains unmapped objects and is the source layer of LAYER MAP == 6 DATATYPE == 3.
+Layer 17 contains unmapped objects and is the source layer of LAYER MAP == 17 DATATYPE == 1.
+Layer 17 contains unmapped objects and is the source layer of LAYER MAP == 17 DATATYPE == 51.
+Layer 31 contains unmapped objects and is the source layer of LAYER MAP == 31 DATATYPE == 1.
+Layer 32 contains unmapped objects and is the source layer of LAYER MAP == 32 DATATYPE == 1.
+----------------------------------------------------------------------------------
+--- ORIGINAL LAYER STATISTICS
+---
+LAYER RH ............ TOTAL Original Geometry Count = 0   (0)
+LAYER POI ........... TOTAL Original Geometry Count = 26  (26)
+LAYER RPO ........... TOTAL Original Geometry Count = 0   (0)
+LAYER RPDMY1 ........ TOTAL Original Geometry Count = 0   (0)
+LAYER RPDMYi ........ TOTAL Original Geometry Count = 0   (0)
+LAYER DOD ........... TOTAL Original Geometry Count = 0   (0)
+LAYER ODI ........... TOTAL Original Geometry Count = 13  (13)
+LAYER SRM ........... TOTAL Original Geometry Count = 0   (0)
+LAYER RODMY ......... TOTAL Original Geometry Count = 0   (0)
+LAYER CO ............ TOTAL Original Geometry Count = 64  (64)
+LAYER DPO ........... TOTAL Original Geometry Count = 0   (0)
+LAYER RBCDMY ........ TOTAL Original Geometry Count = 0   (0)
+LAYER GTDMY2 ........ TOTAL Original Geometry Count = 0   (0)
+LAYER GTDMY1 ........ TOTAL Original Geometry Count = 0   (0)
+LAYER RFDMY ......... TOTAL Original Geometry Count = 0   (0)
+LAYER DRAIN ......... TOTAL Original Geometry Count = 0   (0)
+LAYER NWDMY1 ........ TOTAL Original Geometry Count = 0   (0)
+LAYER NWDMYi ........ TOTAL Original Geometry Count = 0   (0)
+LAYER NW ............ TOTAL Original Geometry Count = 3   (3)
+LAYER NP ............ TOTAL Original Geometry Count = 6   (6)
+LAYER OD25 .......... TOTAL Original Geometry Count = 0   (0)
+LAYER OD33 .......... TOTAL Original Geometry Count = 0   (0)
+LAYER OD18 .......... TOTAL Original Geometry Count = 0   (0)
+LAYER NT_Ni ......... TOTAL Original Geometry Count = 0   (0)
+LAYER DNW ........... TOTAL Original Geometry Count = 0   (0)
+LAYER VTL_N ......... TOTAL Original Geometry Count = 0   (0)
+LAYER VTH_N ......... TOTAL Original Geometry Count = 0   (0)
+LAYER DCO ........... TOTAL Original Geometry Count = 0   (0)
+LAYER OD1T .......... TOTAL Original Geometry Count = 0   (0)
+LAYER VTUL_N ........ TOTAL Original Geometry Count = 0   (0)
+LAYER UHVT_N ........ TOTAL Original Geometry Count = 0   (0)
+LAYER ILVT .......... TOTAL Original Geometry Count = 0   (0)
+LAYER MAC ........... TOTAL Original Geometry Count = 0   (0)
+LAYER ESD3 .......... TOTAL Original Geometry Count = 0   (0)
+LAYER VAR ........... TOTAL Original Geometry Count = 0   (0)
+LAYER PSUB2 ......... TOTAL Original Geometry Count = 0   (0)
+LAYER CAP1TDMY ...... TOTAL Original Geometry Count = 0   (0)
+LAYER p3 ............ TOTAL Original Geometry Count = 0   (0)
+LAYER SRAMTIMER ..... TOTAL Original Geometry Count = 0   (0)
+LAYER SRM14 ......... TOTAL Original Geometry Count = 0   (0)
+LAYER SRM12 ......... TOTAL Original Geometry Count = 0   (0)
+LAYER SRM13 ......... TOTAL Original Geometry Count = 0   (0)
+LAYER SRM17 ......... TOTAL Original Geometry Count = 0   (0)
+LAYER SRM16 ......... TOTAL Original Geometry Count = 0   (0)
+LAYER SRM10 ......... TOTAL Original Geometry Count = 0   (0)
+LAYER SRM11 ......... TOTAL Original Geometry Count = 0   (0)
+LAYER SRAMPSGT ...... TOTAL Original Geometry Count = 0   (0)
+LAYER CELLM ......... TOTAL Original Geometry Count = 0   (0)
+LAYER CAP_IMP ....... TOTAL Original Geometry Count = 0   (0)
+LAYER HVD_NW ........ TOTAL Original Geometry Count = 0   (0)
+LAYER OD25_18 ....... TOTAL Original Geometry Count = 0   (0)
+LAYER OD25_33 ....... TOTAL Original Geometry Count = 0   (0)
+LAYER OD25_28 ....... TOTAL Original Geometry Count = 0   (0)
+LAYER PP ............ TOTAL Original Geometry Count = 6   (6)
+LAYER MEDP .......... TOTAL Original Geometry Count = 0   (0)
+LAYER HVD_P ......... TOTAL Original Geometry Count = 0   (0)
+LAYER VTL_P ......... TOTAL Original Geometry Count = 0   (0)
+LAYER VTH_P ......... TOTAL Original Geometry Count = 0   (0)
+LAYER VTUL_P ........ TOTAL Original Geometry Count = 0   (0)
+LAYER UHVT_P ........ TOTAL Original Geometry Count = 0   (0)
+LAYER DIODMY ........ TOTAL Original Geometry Count = 0   (0)
+LAYER HIADMY ........ TOTAL Original Geometry Count = 0   (0)
+LAYER BJTDMY ........ TOTAL Original Geometry Count = 0   (0)
+LAYER BJTDMY1 ....... TOTAL Original Geometry Count = 0   (0)
+LAYER crown ......... TOTAL Original Geometry Count = 0   (0)
+LAYER blc ........... TOTAL Original Geometry Count = 0   (0)
+LAYER EDRAM_DECAP ... TOTAL Original Geometry Count = 0   (0)
+LAYER M1 ............ TOTAL Original Geometry Count = 185 (185)
+LAYER DUM1 .......... TOTAL Original Geometry Count = 0   (0)
+LAYER RMDMY1 ........ TOTAL Original Geometry Count = 0   (0)
+LAYER DUM2 .......... TOTAL Original Geometry Count = 0   (0)
+LAYER M2 ............ TOTAL Original Geometry Count = 152 (152)
+LAYER IND_SYM ....... TOTAL Original Geometry Count = 0   (0)
+LAYER IND_STD ....... TOTAL Original Geometry Count = 0   (0)
+LAYER IND_CT ........ TOTAL Original Geometry Count = 0   (0)
+LAYER IND_STD_MUA ... TOTAL Original Geometry Count = 0   (0)
+LAYER IND_SYM_MUA ... TOTAL Original Geometry Count = 0   (0)
+LAYER IND_CT_MUA .... TOTAL Original Geometry Count = 0   (0)
+LAYER IND_NR ........ TOTAL Original Geometry Count = 0   (0)
+LAYER RMDMY2 ........ TOTAL Original Geometry Count = 0   (0)
+LAYER DUM3 .......... TOTAL Original Geometry Count = 0   (0)
+LAYER M3 ............ TOTAL Original Geometry Count = 0   (0)
+LAYER RMDMY3 ........ TOTAL Original Geometry Count = 0   (0)
+LAYER DUM4 .......... TOTAL Original Geometry Count = 0   (0)
+LAYER M4 ............ TOTAL Original Geometry Count = 0   (0)
+LAYER RMDMY4 ........ TOTAL Original Geometry Count = 0   (0)
+LAYER DUM5 .......... TOTAL Original Geometry Count = 0   (0)
+LAYER M5 ............ TOTAL Original Geometry Count = 0   (0)
+LAYER RMDMY5 ........ TOTAL Original Geometry Count = 0   (0)
+LAYER DUM6 .......... TOTAL Original Geometry Count = 0   (0)
+LAYER M6 ............ TOTAL Original Geometry Count = 0   (0)
+LAYER RMDMY6 ........ TOTAL Original Geometry Count = 0   (0)
+LAYER DUM7 .......... TOTAL Original Geometry Count = 0   (0)
+LAYER M7 ............ TOTAL Original Geometry Count = 0   (0)
+LAYER RMDMY7 ........ TOTAL Original Geometry Count = 0   (0)
+LAYER DUM8 .......... TOTAL Original Geometry Count = 0   (0)
+LAYER M8 ............ TOTAL Original Geometry Count = 0   (0)
+LAYER RMDMY8 ........ TOTAL Original Geometry Count = 0   (0)
+LAYER DUM9 .......... TOTAL Original Geometry Count = 0   (0)
+LAYER M9 ............ TOTAL Original Geometry Count = 0   (0)
+LAYER RMDMY9 ........ TOTAL Original Geometry Count = 0   (0)
+LAYER DAP ........... TOTAL Original Geometry Count = 0   (0)
+LAYER AP ............ TOTAL Original Geometry Count = 0   (0)
+LAYER RMDMYAP ....... TOTAL Original Geometry Count = 0   (0)
+LAYER RFDMY6T ....... TOTAL Original Geometry Count = 0   (0)
+LAYER RFDMY5T ....... TOTAL Original Geometry Count = 0   (0)
+LAYER SBDDMY ........ TOTAL Original Geometry Count = 0   (0)
+LAYER RDKDMY ........ TOTAL Original Geometry Count = 0   (0)
+LAYER TLDMY ......... TOTAL Original Geometry Count = 0   (0)
+LAYER IND_MP ........ TOTAL Original Geometry Count = 0   (0)
+LAYER IND_RADi ...... TOTAL Original Geometry Count = 0   (0)
+LAYER IND_D4 ........ TOTAL Original Geometry Count = 0   (0)
+LAYER cbm ........... TOTAL Original Geometry Count = 0   (0)
+LAYER ctm ........... TOTAL Original Geometry Count = 0   (0)
+LAYER PROBEM1 ....... TOTAL Original Geometry Count = 0   (0)
+LAYER PROBEM2 ....... TOTAL Original Geometry Count = 0   (0)
+LAYER PROBEM3 ....... TOTAL Original Geometry Count = 0   (0)
+LAYER PROBEM4 ....... TOTAL Original Geometry Count = 0   (0)
+LAYER PROBEM5 ....... TOTAL Original Geometry Count = 0   (0)
+LAYER PROBEM6 ....... TOTAL Original Geometry Count = 0   (0)
+LAYER PROBEM7 ....... TOTAL Original Geometry Count = 0   (0)
+LAYER VTDN .......... TOTAL Original Geometry Count = 0   (0)
+LAYER RFPADDMY ...... TOTAL Original Geometry Count = 0   (0)
+LAYER CB ............ TOTAL Original Geometry Count = 0   (0)
+LAYER CB2 ........... TOTAL Original Geometry Count = 0   (0)
+LAYER VIA8i ......... TOTAL Original Geometry Count = 0   (0)
+LAYER DIFRBC ........ TOTAL Original Geometry Count = 0   (0)
+LAYER XCLRBC ........ TOTAL Original Geometry Count = 0   (0)
+LAYER CASRBC ........ TOTAL Original Geometry Count = 0   (0)
+LAYER RFESDMY ....... TOTAL Original Geometry Count = 0   (0)
+LAYER MOMDMY23 ...... TOTAL Original Geometry Count = 0   (0)
+LAYER MOMDMY25 ...... TOTAL Original Geometry Count = 0   (0)
+LAYER MOMDMY24 ...... TOTAL Original Geometry Count = 0   (0)
+LAYER MOMDMY4 ....... TOTAL Original Geometry Count = 0   (0)
+LAYER MOMDMY5 ....... TOTAL Original Geometry Count = 0   (0)
+LAYER CBD ........... TOTAL Original Geometry Count = 0   (0)
+LAYER RV ............ TOTAL Original Geometry Count = 0   (0)
+LAYER MOMDMY2 ....... TOTAL Original Geometry Count = 0   (0)
+LAYER VIA1i ......... TOTAL Original Geometry Count = 213 (213)
+LAYER MOMDMY7 ....... TOTAL Original Geometry Count = 0   (0)
+LAYER MOMDMY3 ....... TOTAL Original Geometry Count = 0   (0)
+LAYER TCDDMY ........ TOTAL Original Geometry Count = 0   (0)
+LAYER VIA2i ......... TOTAL Original Geometry Count = 0   (0)
+LAYER MOMDMY6 ....... TOTAL Original Geometry Count = 0   (0)
+LAYER VIA5i ......... TOTAL Original Geometry Count = 0   (0)
+LAYER VIA3i ......... TOTAL Original Geometry Count = 0   (0)
+LAYER VIA4i ......... TOTAL Original Geometry Count = 0   (0)
+LAYER VIA6i ......... TOTAL Original Geometry Count = 0   (0)
+LAYER MOMDMY1 ....... TOTAL Original Geometry Count = 0   (0)
+LAYER MOMDMY22 ...... TOTAL Original Geometry Count = 0   (0)
+LAYER MOMDMY_2T ..... TOTAL Original Geometry Count = 0   (0)
+LAYER RFPADDMY1 ..... TOTAL Original Geometry Count = 0   (0)
+LAYER RFPADDMY2 ..... TOTAL Original Geometry Count = 0   (0)
+LAYER RFPADDMY3 ..... TOTAL Original Geometry Count = 0   (0)
+LAYER RFDMYUD ....... TOTAL Original Geometry Count = 0   (0)
+LAYER CTMDMYUD ...... TOTAL Original Geometry Count = 0   (0)
+LAYER VIA7i ......... TOTAL Original Geometry Count = 0   (0)
+LAYER CAP1P5 ........ TOTAL Original Geometry Count = 0   (0)
+LAYER CAP2P0 ........ TOTAL Original Geometry Count = 0   (0)
+LAYER CAP1P0 ........ TOTAL Original Geometry Count = 0   (0)
+LAYER MIM_3TDMY ..... TOTAL Original Geometry Count = 0   (0)
+LAYER IND_GDIS ...... TOTAL Original Geometry Count = 0   (0)
+LAYER IND_S ......... TOTAL Original Geometry Count = 0   (0)
+----------------------------------------------------------------------------------
+--- RULECHECK RESULTS STATISTICS
+---
+RULECHECK STD_IND_CHECK ........... NOT EXECUTED
+RULECHECK STD_IND_CHECK.1 ......... NOT EXECUTED
+RULECHECK CT_IND_CHECK ............ NOT EXECUTED
+RULECHECK CT_IND_CHECK.1 .......... NOT EXECUTED
+RULECHECK SYM_IND_CHECK ........... NOT EXECUTED
+RULECHECK SYM_IND_CHECK.1 ......... NOT EXECUTED
+RULECHECK mnpg .................... TOTAL Result Count = 0  (0)
+RULECHECK mppg .................... TOTAL Result Count = 0  (0)
+RULECHECK floating.nxwell_float ... TOTAL Result Count = 0  (0)
+RULECHECK floating.psub ........... TOTAL Result Count = 0  (0)
+RULECHECK npvss49 ................. TOTAL Result Count = 0  (0)
+RULECHECK ppvdd49 ................. TOTAL Result Count = 0  (0)
+----------------------------------------------------------------------------------
+--- ERC RULECHECK RESULTS STATISTICS (BY CELL)
+---
+----------------------------------------------------------------------------------
+--- SUMMARY
+---
+TOTAL CPU Time:                              0
+TOTAL REAL Time:                             1
+TOTAL Original Layer Geometries:             668 (668)
+TOTAL ERC RuleChecks Executed:               6
+TOTAL ERC RuleCheck Results Generated:       0 (0)

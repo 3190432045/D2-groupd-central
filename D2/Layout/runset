@@ -1,0 +1,17 @@
+*lvsRunDir: /home/jw26u22
+*lvsLayoutPaths: TEAMex_XOR4.calibre.db
+*lvsLayoutPrimary: TEAMex_XOR4
+*lvsLayoutLibrary: d2
+*lvsLayoutView: layout
+*lvsLayoutGetFromViewer: 1
+*lvsSourcePath: TEAMex_XOR4.src.net
+*lvsSourcePrimary: TEAMex_XOR4
+*lvsSourceLibrary: d2
+*lvsSourceView: schematic
+*lvsSpiceFile: TEAMex_XOR4.sp
+*lvsERCDatabase: TEAMex_XOR4.erc.results
+*lvsERCSummaryFile: TEAMex_XOR4.erc.summary
+*lvsReportFile: TEAMex_XOR4.lvs.report
+*cmnFDILayoutLibrary: d2
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: TEAMex_XOR4.def

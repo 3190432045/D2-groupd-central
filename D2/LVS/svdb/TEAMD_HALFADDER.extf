@@ -1,0 +1,12 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1696850240 1696850242
+lvs_ExtOutFile RUNDIR /home/jw26u22/d2/LVS
+lvs_ExtOutFile RULES_FILE /home/jw26u22/d2/LVS/_calibre.lvs_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoErcSummary {6 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /home/jw26u22/d2/LVS/TEAMD_HALFADDER.sp
+lvs_ExtOutFile EXTRACTION_REPORT TEAMD_HALFADDER.lvs.report.ext
+lvs_ExtOutFile ERC_DATABASE TEAMD_HALFADDER.erc.results
+lvs_ExtOutFile ERC_SUMMARY TEAMD_HALFADDER.erc.summary

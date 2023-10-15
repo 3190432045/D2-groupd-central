@@ -1,0 +1,78 @@
+* SPICE export by:      S-Edit 2021.2.0
+* Export time:          Mon Oct  9 12:17:10 2023
+* Design path:          H:\s1_23_24\d2\Schematic\lib.defs
+* Library:              TEAMD_Schematics1
+* Cell:                 TEAMD_HALFADDER
+* Testbench:            Spice
+* View:                 schematic
+* Export as:            subcircuit definition
+* Export mode:          hierarchical
+* Exclude empty:        no
+* Exclude .model:       no
+* Exclude .hdl:         no
+* Exclude .end:         no
+* Expand paths:         no
+* Wrap lines:           no
+* Exclude simulator commands:  no
+* Exclude global pins:         no
+* Exclude instance locations:  no
+* Control property name(s):    LVS SPICE
+
+*************** Subcircuits ***************
+.subckt INV1 A Q Gnd Vdd 
+* PORT=Q TYPE=Out
+* PORT=Gnd TYPE=Other
+* PORT=Vdd TYPE=Other
+* PORT=A TYPE=In
+
+MMn1 Q A Gnd Gnd nch W=300n L=60n M=1 AS=54f PS=960n AD=54f PD=960n $ $x=-200 $y=-400 $w=400 $h=600
+MMp1 Q A Vdd Vdd pch W=500n L=60n M=1 AS=90f PS=1.36u AD=90f PD=1.36u $ $x=-200 $y=400 $w=400 $h=600
+.ends
+
+.subckt XOR2 A B Q Gnd Vdd 
+* PORT=Gnd TYPE=Other
+* PORT=Vdd TYPE=Other
+* PORT=B TYPE=In
+* PORT=Q TYPE=Out
+* PORT=A TYPE=In
+
+MMn1 N_4 B Gnd Gnd nch W=300n L=60n M=1 AS=54f PS=960n AD=54f PD=960n $ $x=9570 $y=-1400 $w=400 $h=600
+MMn2 Q A N_4 Gnd nch W=300n L=60n M=1 AS=54f PS=960n AD=54f PD=960n $ $x=9570 $y=-660 $w=400 $h=600
+MMn3 N_3 A Gnd Gnd nch W=300n L=60n M=1 AS=54f PS=960n AD=54f PD=960n $ $x=6800 $y=-700 $w=400 $h=600
+MMn4 Q N_3 Gnd Gnd nch W=300n L=60n M=1 AS=54f PS=960n AD=54f PD=960n $ $x=8800 $y=-700 $w=400 $h=600
+MMn5 N_3 B Gnd Gnd nch W=300n L=60n M=1 AS=54f PS=960n AD=54f PD=960n $ $x=7800 $y=-700 $w=400 $h=600
+MM1 N_3 B N_1 Vdd pch W=500n L=60n M=1 AS=90f PS=1.36u AD=90f PD=1.36u $ $x=6800 $y=990 $w=400 $h=600
+MM2 N_1 A Vdd Vdd pch W=500n L=60n M=1 AS=90f PS=1.36u AD=90f PD=1.36u $ $x=6800 $y=1810 $w=400 $h=600
+MM3 N_2 B Vdd Vdd pch W=500n L=60n M=1 AS=90f PS=1.36u AD=90f PD=1.36u $ $x=10170 $y=1520 $w=400 $h=600
+MM4 Q N_3 N_2 Vdd pch W=500n L=60n M=1 AS=90f PS=1.36u AD=90f PD=1.36u $ $x=8800 $y=440 $w=400 $h=600
+MM5 N_2 A Vdd Vdd pch W=500n L=60n M=1 AS=90f PS=1.36u AD=90f PD=1.36u $ $x=9200 $y=1520 $w=400 $h=600
+.ends
+
+.subckt NAND2 A B Q Gnd Vdd 
+* PORT=B TYPE=In
+* PORT=Q TYPE=Out
+* PORT=A TYPE=In
+* PORT=Gnd TYPE=Other
+* PORT=Vdd TYPE=Other
+
+MM3 N_1 B Gnd Gnd nch W=300n L=60n M=1 AS=54f PS=960n AD=54f PD=960n $ $x=1300 $y=-2390 $w=400 $h=600
+MM4 Q A N_1 Gnd nch W=300n L=60n M=1 AS=54f PS=960n AD=54f PD=960n $ $x=1300 $y=-1700 $w=400 $h=600
+MM1 Q A Vdd Vdd pch W=500n L=60n M=1 AS=90f PS=1.36u AD=90f PD=1.36u $ $x=800 $y=-300 $w=400 $h=600
+MM2 Q B Vdd Vdd pch W=500n L=60n M=1 AS=90f PS=1.36u AD=90f PD=1.36u $ $x=1800 $y=-300 $w=400 $h=600
+.ends
+
+.subckt TEAMD_HALFADDER A B CARRY SUM Gnd Vdd 
+* PORT=SUM TYPE=Out
+* PORT=CARRY TYPE=Out
+* PORT=Vdd TYPE=Other
+* PORT=Gnd TYPE=Other
+* PORT=A TYPE=In
+* PORT=B TYPE=In
+
+XINV1_1 nCARRY CARRY Gnd Vdd INV1 $ $x=2850 $y=2500 $w=1900 $h=800
+XNAND2_1 A B nCARRY Gnd Vdd NAND2 $ $x=600 $y=2499 $w=1800 $h=802
+XXOR2_1 A B SUM Gnd Vdd XOR2 $ $x=650 $y=4520 $w=1700 $h=800
+.ends
+
+
+

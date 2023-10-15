@@ -1,0 +1,8 @@
+DEFINE TEAMD_Schematics1 TEAMD_Schematics1
+ASSIGN TEAMD_Schematics1 libMode shared
+DEFINE TSMC065_Cells TSMC065_Cells
+ASSIGN TSMC065_Cells libMode shared
+DEFINE Spice_Cells Spice_Cells
+ASSIGN Spice_Cells libMode shared
+DEFINE D2_Cells D2_Cells
+ASSIGN D2_Cells libMode shared

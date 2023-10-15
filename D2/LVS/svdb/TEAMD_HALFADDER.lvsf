@@ -1,0 +1,15 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/jw26u22/d2/LVS
+lvs_LvsfVersion 4
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {3 0 0 0}
+lvs_SourceCase NO
+lvs_LayoutCase NO
+lvs_MapDevice MN N MN NCH L ""
+lvs_MapDevice MP P MP PCH L ""
+lvs_PowerName VDD
+lvs_GroundName GND
+lvs_LvsOutFile LVS_REPORT TEAMD_HALFADDER.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST /home/jw26u22/d2/LVS/TEAMD_HALFADDER.src.net
+lvs_LvsOutFile RULES_FILE /home/jw26u22/d2/LVS/_calibre.lvs_
+lvs_LvsRunTimes 1696850242 1696850242

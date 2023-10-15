@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/TEAMD_HALFADDER.dv
+dv_start matched                                  
+dv_cell {TEAMD_HALFADDER} {TEAMD_HALFADDER} matched
+dv_obj_count -transformed_nets {8 8} -transformed_inst {6 6} -transformed_port {6 6}
+dv_end
