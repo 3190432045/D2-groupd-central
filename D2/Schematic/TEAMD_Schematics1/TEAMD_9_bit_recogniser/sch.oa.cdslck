@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      gd5g22
+HostName                       JFB16-R2001-U01.soton.ac.uk
+ProcessIdentifier              18928
+ProcessCreationTime_UTC        1697388822
+ProcessCreationTime_Readable   Sun Oct 15 17:53:42 2023 GMT Daylight Time
+AppIdentifier                  OA File System Design Manager
+OSType                         win32
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         H:\D2\Schematics\TEAMD_schematics1\TEAMD_9_bit_recogniser\TEAMD_9_bit_recogniser\sch.oa.cdslck
+TimeEditLocked                 Sun Oct 15 19:47:52 2023 GMT Daylight Time
