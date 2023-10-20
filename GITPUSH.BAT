@@ -7,7 +7,7 @@
 @REM -----------------------------------------------------------------------
 
 @SET CONFIG_FILE_PATH=PULLPUSHCONFIG.TXT
-@SET ACCOUNT_FILE_PATH=ACCOUNT.TXT
+@REM @SET ACCOUNT_FILE_PATH=ACCOUNT.TXT
 @REM @SET GIT_EXECUTABLE_PATH=
 @REM @SET LOCAL_REPO_PATH=
 @REM @SET REMOTE_REPO_NAME=origin
@@ -87,7 +87,7 @@
 @ECHO.
 @ECHO                           GIT PUSH BATCH
 @ECHO.
-@ECHO  Do you wish to commit?
+@ECHO  Do you wish to add all untracked files?
 @ECHO ===============================================================================
 @ECHO Enter y/n or press ENTER to abort
 @ECHO.
@@ -96,15 +96,29 @@
 @SET /P VAR="Enter: "
 
 @IF NOT DEFINED VAR GOTO act_aborted
-@IF "%VAR%"=="n" GOTO act_aborted
-@IF "%VAR%"=="N" GOTO act_aborted
-@IF "%VAR%"=="no" GOTO act_aborted
-@IF "%VAR%"=="NO" GOTO act_aborted
-@IF "%VAR%"=="y" GOTO act_commit
-@IF "%VAR%"=="Y" GOTO act_commit
-@IF "%VAR%"=="yes" GOTO act_commit
-@IF "%VAR%"=="YES" GOTO act_commit
+@IF "%VAR%"=="n" GOTO act_commit
+@IF "%VAR%"=="N" GOTO act_commit
+@IF "%VAR%"=="no" GOTO act_commit
+@IF "%VAR%"=="NO" GOTO act_commit
+@IF "%VAR%"=="y" GOTO act_add_all
+@IF "%VAR%"=="Y" GOTO act_add_all
+@IF "%VAR%"=="yes" GOTO act_add_all
+@IF "%VAR%"=="YES" GOTO act_add_all
 @GOTO act_aborted
+
+
+:act_add_all
+@ECHO.
+@ECHO                           GIT PUSH BATCH
+@ECHO.
+@ECHO  Applying changes to all untracked files...
+@ECHO ===============================================================================
+@ECHO.
+
+
+@%GIT_EXECUTABLE_PATH% add -A
+@IF ERRORLEVEL 1 GOTO error_add_all
+@GOTO act_commit
 
 
 :act_commit
@@ -131,54 +145,7 @@ ECHO %MSG%
 
 
 @%GIT_EXECUTABLE_PATH% commit -a -m "%MSG%"
-@IF ERRORLEVEL 1 GOTO :act_add_all
-
-
-@ECHO.
-@ECHO                           GIT PUSH BATCH
-@ECHO.
-@ECHO  Push to remote repositary now?
-@ECHO ===============================================================================
-@ECHO Enter y/n or press ENTER to abort
-@ECHO.
-
-@SET VAR=
-@SET /P VAR="Enter: "
-
-@IF NOT DEFINED VAR GOTO act_aborted
-@IF "%VAR%"=="n" GOTO act_aborted
-@IF "%VAR%"=="N" GOTO act_aborted
-@IF "%VAR%"=="no" GOTO act_aborted
-@IF "%VAR%"=="NO" GOTO act_aborted
-@IF "%VAR%"=="y" GOTO act_push
-@IF "%VAR%"=="Y" GOTO act_push
-@IF "%VAR%"=="yes" GOTO act_push
-@IF "%VAR%"=="YES" GOTO act_push
-@GOTO act_aborted
-
-
-:act_add_all
-@ECHO.
-@ECHO                           GIT PUSH BATCH
-@ECHO.
-@ECHO  Applying changes to all untracked files...
-@ECHO ===============================================================================
-@ECHO.
-
-
-@%GIT_EXECUTABLE_PATH% add -A
-@IF ERRORLEVEL 1 GOTO error_add_all
-
-
-@ECHO.
-@ECHO                           GIT PUSH BATCH
-@ECHO.
-@ECHO  Committing...
-@ECHO ===============================================================================
-@ECHO.
-
-
-@%GIT_EXECUTABLE_PATH% commit -a -m "%MSG%"
+@IF ERRORLEVEL 1 ECHO ERROR: Cannot commit or nothing to commit.
 @REM @IF ERRORLEVEL 1 GOTO :error_commit
 
 
@@ -250,9 +217,9 @@ ECHO %MSG%
 @ECHO ERROR: Cannot add untracked files.
 @GOTO end
 
-:error_commit
-@ECHO ERROR: Cannot commit or nothing to commit.
-@GOTO end
+@REM :error_commit
+@REM @ECHO ERROR: Cannot commit or nothing to commit.
+@REM @GOTO end
 
 :error_push
 @ECHO ERROR: Cannot push to remote repositary.
