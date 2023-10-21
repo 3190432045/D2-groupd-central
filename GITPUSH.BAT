@@ -1,5 +1,5 @@
 @REM
-@REM GIT PUSH FOR GITHUB 20231020
+@REM GIT PUSH FOR GITHUB 20231021
 @REM
 
 @SETLOCAL
@@ -145,7 +145,7 @@ ECHO %MSG%
 
 
 @%GIT_EXECUTABLE_PATH% commit -a -m "%MSG%"
-@IF ERRORLEVEL 1 ECHO ERROR: Cannot commit or nothing to commit.
+@IF ERRORLEVEL 1 ECHO WARNING: Cannot commit or nothing to commit.
 @REM @IF ERRORLEVEL 1 GOTO :error_commit
 
 
