@@ -1,10 +1,10 @@
 // Verilog netlist created by S-Edit 2021.2.0
-// Written on Mon Oct 16 11:26:25 2023
+// Written on Sun Oct 22 13:18:09 2023
 
 // Library:               TEAMD_Schematics1
 // Cell:                  TEAMD_DESIGN
 // View name:             HALFADDER_SIM
-// Design path:           H:\20231016\D2\Schematic\TEAMD_Schematics1
+// Design path:           C:\Users\jw26u22\Downloads\D2-groupd-central\D2\Schematic\TEAMD_Schematics1
 // Control property name(s): VERILOG
 // Exclude global pins on subcircuits: <yes>
 
@@ -496,21 +496,175 @@ TIE1 TIE1_1(
 endmodule // TEAMD_CIRCUIT1
 
 
-module VoltageSource(
-	Neg,
-	Pos
+module TEAMD_Control_Unit(
+	CLK,
+	iLoad,
+	nReset,
+	Rx
 );
-inout Neg;
-inout Pos;
-parameter ROUND=0;
-parameter Period=2e-07;
-parameter VLow=0;
-parameter Delay=0;
-parameter VHigh=5;
-parameter FallTime=5e-09;
-parameter RiseTime=5e-09;
-parameter PulseWidth=9.5e-08;
-endmodule // VoltageSource
+input CLK;
+output iLoad;
+input nReset;
+input Rx;
+
+wire N_1;
+wire N_2;
+wire N_3;
+wire N_4;
+wire N_5;
+wire N_6;
+wire N_7;
+wire N_8;
+wire N_9;
+wire N_10;
+wire N_11;
+wire N_12;
+wire N_13;
+wire N_14;
+wire N_15;
+wire N_16;
+wire N_17;
+wire N_18;
+wire N_19;
+wire N_20;
+wire N_21;
+wire N_22;
+wire N_23;
+wire N_24;
+
+DFFR DFFR_1(
+	.Clk(CLK),
+	.D(N_6),
+	.nQ(N_21),
+	.nRst(nReset),
+	.Q(N_1)
+);
+DFFR DFFR_2(
+	.Clk(CLK),
+	.D(N_12),
+	.nQ(N_22),
+	.nRst(nReset),
+	.Q(N_3)
+);
+DFFR DFFR_3(
+	.Clk(CLK),
+	.D(N_9),
+	.nQ(N_23),
+	.nRst(nReset),
+	.Q(N_4)
+);
+DFFR DFFR_4(
+	.Clk(CLK),
+	.D(N_17),
+	.nQ(N_24),
+	.nRst(nReset),
+	.Q(N_5)
+);
+INV1 INV1_1(
+	.A(Rx),
+	.Q(N_2)
+);
+NAND2 NAND2_1(
+	.A(N_8),
+	.B(N_11),
+	.Q(N_6)
+);
+NAND2 NAND2_2(
+	.A(N_14),
+	.B(N_16),
+	.Q(N_9)
+);
+NAND3 NAND3_1(
+	.A(N_21),
+	.B(N_3),
+	.C(N_23),
+	.Q(N_7)
+);
+NAND3 NAND3_2(
+	.A(N_21),
+	.B(N_3),
+	.C(N_24),
+	.Q(N_10)
+);
+NAND3 NAND3_3(
+	.A(N_13),
+	.B(N_7),
+	.C(N_10),
+	.Q(N_12)
+);
+NAND3 NAND3_4(
+	.A(N_21),
+	.B(N_23),
+	.C(N_5),
+	.Q(N_14)
+);
+NAND3 NAND3_5(
+	.A(N_21),
+	.B(N_4),
+	.C(N_24),
+	.Q(N_16)
+);
+NAND3 NAND3_6(
+	.A(N_21),
+	.B(N_4),
+	.C(N_24),
+	.Q(N_18)
+);
+NAND3 NAND3_7(
+	.A(N_21),
+	.B(N_3),
+	.C(N_24),
+	.Q(N_19)
+);
+NAND3 NAND3_8(
+	.A(N_2),
+	.B(N_21),
+	.C(N_24),
+	.Q(N_20)
+);
+NAND4 NAND4_1(
+	.A(N_1),
+	.B(N_22),
+	.C(N_23),
+	.D(N_24),
+	.Q(N_8)
+);
+NAND4 NAND4_2(
+	.A(N_21),
+	.B(N_3),
+	.C(N_4),
+	.D(N_5),
+	.Q(N_11)
+);
+NAND4 NAND4_3(
+	.A(N_21),
+	.B(N_22),
+	.C(N_4),
+	.D(N_5),
+	.Q(N_13)
+);
+NAND4 NAND4_4(
+	.A(N_1),
+	.B(N_22),
+	.C(N_23),
+	.D(N_24),
+	.Q(N_15)
+);
+NAND4 NAND4_5(
+	.A(N_18),
+	.B(N_15),
+	.C(N_19),
+	.D(N_20),
+	.Q(N_17)
+);
+NOR4 NOR4_1(
+	.A(N_21),
+	.B(N_3),
+	.C(N_4),
+	.D(N_24),
+	.Q(iLoad)
+);
+endmodule // TEAMD_Control_Unit
 
 
 module TEAMD_Asynchronous_Serial_Interface(
@@ -523,7 +677,7 @@ module TEAMD_Asynchronous_Serial_Interface(
 	iD5,
 	iD6,
 	iLoad,
-	RESET,
+	nReset,
 	Rx
 );
 input CLK;
@@ -535,7 +689,7 @@ output iD4;
 output iD5;
 output iD6;
 output iLoad;
-input RESET;
+input nReset;
 input Rx;
 
 wire N_1;
@@ -550,59 +704,56 @@ DFFR DFFR_1(
 	.Clk(CLK),
 	.D(Rx),
 	.nQ(N_1),
-	.nRst(RESET),
+	.nRst(nReset),
 	.Q(iD6)
 );
 DFFR DFFR_2(
 	.Clk(CLK),
 	.D(iD6),
 	.nQ(N_2),
-	.nRst(RESET),
+	.nRst(nReset),
 	.Q(iD5)
 );
 DFFR DFFR_3(
 	.Clk(CLK),
 	.D(iD5),
 	.nQ(N_3),
-	.nRst(RESET),
+	.nRst(nReset),
 	.Q(iD4)
 );
 DFFR DFFR_4(
 	.Clk(CLK),
 	.D(iD4),
 	.nQ(N_4),
-	.nRst(RESET),
+	.nRst(nReset),
 	.Q(iD3)
 );
 DFFR DFFR_5(
 	.Clk(CLK),
 	.D(iD3),
 	.nQ(N_5),
-	.nRst(RESET),
+	.nRst(nReset),
 	.Q(iD2)
 );
 DFFR DFFR_6(
 	.Clk(CLK),
 	.D(iD2),
 	.nQ(N_6),
-	.nRst(RESET),
+	.nRst(nReset),
 	.Q(iD1)
 );
 DFFR DFFR_7(
 	.Clk(CLK),
 	.D(iD1),
 	.nQ(N_7),
-	.nRst(RESET),
+	.nRst(nReset),
 	.Q(iD0)
 );
-VoltageSource #(
-	.FallTime(0),
-	.Period(0.000104167),
-	.RiseTime(0),
-	.VHigh(1.2),
-	.PulseWidth(5.20833e-05)) V2(
-	.Neg(Design_Globals.Gnd),
-	.Pos(CLK)
+TEAMD_Control_Unit TEAMD_Control_Unit_2(
+	.CLK(CLK),
+	.iLoad(iLoad),
+	.nReset(nReset),
+	.Rx(Rx)
 );
 endmodule // TEAMD_Asynchronous_Serial_Interface
 
@@ -670,7 +821,7 @@ TEAMD_Asynchronous_Serial_Interface TEAMD_Asynchronous_Serial_Interface_1(
 	.iD5(Q8),
 	.iD6(Q9),
 	.iLoad(Q11),
-	.RESET(A8),
+	.nReset(A8),
 	.Rx(A9)
 );
 TEAMD_CIRCUIT1 TEAMD_RINGOSC_1(
