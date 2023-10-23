@@ -1,5 +1,5 @@
 // Verilog netlist created by S-Edit 2021.2.0
-// Written on Sun Oct 22 16:30:50 2023
+// Written on Mon Oct 23 11:04:13 2023
 
 // Library:               TEAMD_Schematics1
 // Cell:                  TEAMD_DESIGN
@@ -496,7 +496,7 @@ TIE1 TIE1_1(
 endmodule // TEAMD_CIRCUIT1
 
 
-module TEAMD_Control_Unit(
+module TEAMD_4_CU(
 	CLK,
 	iLoad,
 	nReset,
@@ -664,10 +664,10 @@ NOR4 NOR4_1(
 	.D(N_24),
 	.Q(iLoad)
 );
-endmodule // TEAMD_Control_Unit
+endmodule // TEAMD_4_CU
 
 
-module TEAMD_Asynchronous_Serial_Interface(
+module TEAMD_CIRCUIT3(
 	CLK,
 	iD0,
 	iD1,
@@ -677,6 +677,7 @@ module TEAMD_Asynchronous_Serial_Interface(
 	iD5,
 	iD6,
 	iLoad,
+	iP,
 	nReset,
 	Rx
 );
@@ -689,6 +690,7 @@ output iD4;
 output iD5;
 output iD6;
 output iLoad;
+output iP;
 input nReset;
 input Rx;
 
@@ -699,10 +701,11 @@ wire N_4;
 wire N_5;
 wire N_6;
 wire N_7;
+wire N_8;
 
 DFFR DFFR_1(
 	.Clk(CLK),
-	.D(Rx),
+	.D(iP),
 	.nQ(N_1),
 	.nRst(nReset),
 	.Q(iD6)
@@ -749,13 +752,20 @@ DFFR DFFR_7(
 	.nRst(nReset),
 	.Q(iD0)
 );
-TEAMD_Control_Unit TEAMD_Control_Unit_2(
+DFFR DFFR_8(
+	.Clk(CLK),
+	.D(Rx),
+	.nQ(N_8),
+	.nRst(nReset),
+	.Q(iP)
+);
+TEAMD_4_CU TEAMD_4_CU_1(
 	.CLK(CLK),
 	.iLoad(iLoad),
 	.nReset(nReset),
 	.Rx(Rx)
 );
-endmodule // TEAMD_Asynchronous_Serial_Interface
+endmodule // TEAMD_CIRCUIT3
 
 
 module TEAMD_DESIGN(
@@ -778,6 +788,7 @@ module TEAMD_DESIGN(
 	Q7,
 	Q8,
 	Q9,
+	Q10,
 	Q11
 );
 input A0;
@@ -799,6 +810,7 @@ output Q6;
 output Q7;
 output Q8;
 output Q9;
+output Q10;
 output Q11;
 
 INV1 INV1_1(
@@ -811,7 +823,7 @@ TEAMD_9_bit_recogniser TEAMD_9_bit_recogniser_1(
 	.A5(A5),
 	.Q2(Q2)
 );
-TEAMD_Asynchronous_Serial_Interface TEAMD_Asynchronous_Serial_Interface_1(
+TEAMD_CIRCUIT3 TEAMD_CIRCUIT3_1(
 	.CLK(A6),
 	.iD0(Q3),
 	.iD1(Q4),
@@ -821,6 +833,7 @@ TEAMD_Asynchronous_Serial_Interface TEAMD_Asynchronous_Serial_Interface_1(
 	.iD5(Q8),
 	.iD6(Q9),
 	.iLoad(Q11),
+	.iP(Q10),
 	.nReset(A8),
 	.Rx(A9)
 );
